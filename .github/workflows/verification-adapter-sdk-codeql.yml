@@ -3,11 +3,11 @@ name: verification-adapter-sdk-codeql
 on:
   push:
     paths:
-      - "verification-adapter-sdk/**"
+      - "**"
       - ".github/workflows/verification-adapter-sdk-codeql.yml"
   pull_request:
     paths:
-      - "verification-adapter-sdk/**"
+      - "**"
       - ".github/workflows/verification-adapter-sdk-codeql.yml"
   schedule:
     - cron: "18 7 * * 1"
@@ -27,7 +27,7 @@ jobs:
       - uses: github/codeql-action/init@v3
         with:
           languages: javascript-typescript
-          source-root: verification-adapter-sdk
+          source-root: .
       - uses: github/codeql-action/analyze@v3
         with:
           category: "/language:javascript-typescript"

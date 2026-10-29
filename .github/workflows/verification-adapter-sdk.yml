@@ -3,17 +3,17 @@ name: verification-adapter-sdk
 on:
   push:
     paths:
-      - "verification-adapter-sdk/**"
+      - "**"
       - ".github/workflows/verification-adapter-sdk.yml"
   pull_request:
     paths:
-      - "verification-adapter-sdk/**"
+      - "**"
       - ".github/workflows/verification-adapter-sdk.yml"
   workflow_dispatch:
 
 defaults:
   run:
-    working-directory: verification-adapter-sdk
+    working-directory: .
 
 jobs:
   check:
@@ -29,8 +29,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
-          cache-dependency-path: verification-adapter-sdk/package-lock.json
+          cache-dependency-path: package-lock.json
       - run: npm ci
+      - run: python3 scripts/check-migration.py
       - run: npm run build
       - run: npm run lint
       - run: npm run typecheck
@@ -74,7 +75,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: verification-adapter-sdk/package-lock.json
+          cache-dependency-path: package-lock.json
       - run: npm ci
       - name: Prepare an independent queue regression database
         run: |
@@ -108,6 +109,6 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: verification-adapter-sdk/package-lock.json
+          cache-dependency-path: package-lock.json
       - run: npm ci
       - run: npm run coverage

@@ -35,7 +35,8 @@
     "api-extractor": "node scripts/api-extractor.mjs",
     "dts-maps": "node scripts/check-declaration-maps.mjs",
     "perf:bench": "node scripts/perf-bench.mjs",
-    "perf:soak": "node scripts/perf-soak.mjs"
+    "perf:soak": "node scripts/perf-soak.mjs",
+    "check:migration": "python3 scripts/check-migration.py"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.5",
@@ -49,5 +50,13 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.33.1",
     "vitest": "^3.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splitintech/verification-adapter-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/splitintech/verification-adapter-sdk/issues"
+  },
+  "homepage": "https://github.com/splitintech/verification-adapter-sdk#readme"
 }

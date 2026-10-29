@@ -8,7 +8,7 @@ on:
 
 defaults:
   run:
-    working-directory: verification-adapter-sdk
+    working-directory: .
 
 jobs:
   soak:
@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: verification-adapter-sdk/package-lock.json
+          cache-dependency-path: package-lock.json
       - run: npm ci
       - run: npm run build
       - run: npm run perf:soak

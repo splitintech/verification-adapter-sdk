@@ -1,0 +1,2681 @@
+{
+  "source_repository": "https://github.com/splitintech/open-internal-tools",
+  "source_commit": "f5ec32bc4d050bfbd3f01ecc53569038eb9ce308",
+  "product": "verification-adapter-sdk",
+  "files": [
+    {
+      "source": ".github/workflows/verification-adapter-sdk-codeql.yml",
+      "target": ".github/workflows/verification-adapter-sdk-codeql.yml",
+      "git_blob": "c8dd8129e9ee626ca00fe8bc3fc7153ed9be8d46",
+      "mode": "100644",
+      "sha256": "ce2fd18b7fb9e256991d2ea8a7326514ae593653cbeb0400829b075d67b9208b"
+    },
+    {
+      "source": ".github/workflows/verification-adapter-sdk-compat.yml",
+      "target": ".github/workflows/verification-adapter-sdk-compat.yml",
+      "git_blob": "6419408549f600d83936c6dbf4d467bfca722503",
+      "mode": "100644",
+      "sha256": "ac60c257d8630d7a1f75a63e9f236595fb424b6243fdd10dfdd2d7e6c1a781f6"
+    },
+    {
+      "source": ".github/workflows/verification-adapter-sdk-perf.yml",
+      "target": ".github/workflows/verification-adapter-sdk-perf.yml",
+      "git_blob": "1c0acf33477de790cbfce87d589a68e6ca3c1e82",
+      "mode": "100644",
+      "sha256": "bebf85a31de83f3bc5b8c1ebbaf35d26aeebdf57a7173ab105b3222f65271d28"
+    },
+    {
+      "source": ".github/workflows/verification-adapter-sdk-publish.yml",
+      "target": ".github/workflows/verification-adapter-sdk-publish.yml",
+      "git_blob": "12afb29d50c5763c167a04b898063f07f8bfaeb3",
+      "mode": "100644",
+      "sha256": "af58c24b016c2db65d1a7cad41925dfba2b9db3a43c4c934b4a2197129c20aa4"
+    },
+    {
+      "source": ".github/workflows/verification-adapter-sdk.yml",
+      "target": ".github/workflows/verification-adapter-sdk.yml",
+      "git_blob": "39b2d56fa1930fe162b5daa53e4234bad7556898",
+      "mode": "100644",
+      "sha256": "1ef5ccab744ad235a38ec9e125a4d74a8a6636d82ad39652080faf5c335157e6"
+    },
+    {
+      "source": "docs/brand/splitin-logo.png",
+      "target": "docs/brand/splitin-logo.png",
+      "git_blob": "807558c4206517d878dfe932315bf738317141fe",
+      "mode": "100644",
+      "sha256": "9e0954d3aa5ccfd94a358e61f9d0f18b2b80928c162d6a3228d9389769496a72"
+    },
+    {
+      "source": "scripts/assert-release-tag.mjs",
+      "target": "scripts/assert-release-tag.mjs",
+      "git_blob": "15d8bcd982dc7ede03be3d62179181aed1066b0f",
+      "mode": "100755",
+      "sha256": "c11eca6fe51e8e8e899262e19c8c6e7bab798a474241cc9f02ced9a9a01a7606"
+    },
+    {
+      "source": "scripts/oidc-npm-publish.mjs",
+      "target": "scripts/oidc-npm-publish.mjs",
+      "git_blob": "dde682ea4b5c0119a057f1002e86f09614bf569f",
+      "mode": "100755",
+      "sha256": "5215d31833c6d52fe2d8f9f058ca0c530882037bc67d4c06e16119041057a5ad"
+    },
+    {
+      "source": "verification-adapter-sdk/.changeset/config.json",
+      "target": ".changeset/config.json",
+      "git_blob": "08d85112c7e8076e6e43cc1f61b5a0240992dc03",
+      "mode": "100644",
+      "sha256": "d4558cda77fc35db5c6ad5a74d8c8ad24b8d51984c5d4a953bc68304b3abce2e"
+    },
+    {
+      "source": "verification-adapter-sdk/.changeset/initial-beta.md",
+      "target": ".changeset/initial-beta.md",
+      "git_blob": "8116fd50d45702423db5b11e056936b035f65b14",
+      "mode": "100644",
+      "sha256": "83378b1afffb91044976edd7d5a34cf62add1fe6145d097f6a8ffca23e7960fc"
+    },
+    {
+      "source": "verification-adapter-sdk/.env.example",
+      "target": ".env.example",
+      "git_blob": "a77c02a7d5651a8575f32ca6a05f0b8fe9427f6e",
+      "mode": "100644",
+      "sha256": "da0a277597f0e4b4b138cc9a5a9ecfb705c44f5eb718d063867da2760eb725d1"
+    },
+    {
+      "source": "verification-adapter-sdk/.gitignore",
+      "target": ".gitignore",
+      "git_blob": "fd71bd0c35f031b670b96337b727d208c6345276",
+      "mode": "100644",
+      "sha256": "255b4287b8260468845f9df10ef83659f950eaf0666d1bbd4a18cd6243dd955e"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/PersonaEmbeddedLauncher.tsx",
+      "target": ".import/adapters/PersonaEmbeddedLauncher.tsx",
+      "git_blob": "767e581362274b755387a065d011525fa61adbd2",
+      "mode": "100644",
+      "sha256": "cfbf6a17be1c50d5ed0c0126ecfe1e80427f8b6218e0b5a72d137ebe992a1308"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/PlaidLegacyLauncher.tsx",
+      "target": ".import/adapters/PlaidLegacyLauncher.tsx",
+      "git_blob": "c0c21e52d2b396934a1a17dda86fef5f71a270d9",
+      "mode": "100644",
+      "sha256": "a629ebd2147684ec2765d742307312cc21629a3b7f8fcfe72aa015c401c395ff"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/StripeIdentityLauncher.tsx",
+      "target": ".import/adapters/StripeIdentityLauncher.tsx",
+      "git_blob": "3fb3cb6ffdf99c77a051622c8169c2dc158e14fd",
+      "mode": "100644",
+      "sha256": "ec59b98bb13b0251750c6eec14e0a104249708ed1b23f8bd034a4d704e8097fc"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/VerificationLauncher.tsx",
+      "target": ".import/adapters/VerificationLauncher.tsx",
+      "git_blob": "336b2eec862e5ade4e020dc6a29ff07e387adefc",
+      "mode": "100644",
+      "sha256": "44028fb3e262f7530580a924833159f05de9f0f7ddc71a8ba9ab291e2aa9c59e"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/VerificationOperations.tsx",
+      "target": ".import/adapters/VerificationOperations.tsx",
+      "git_blob": "4207610acbe1f4900bf99d29f81b1a681d0f4c27",
+      "mode": "100644",
+      "sha256": "4f3fb66f154ebe58d0b3d2edfb7b29458e92bd6defa815c3325df2343d65a02c"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/fakeProvider.ts",
+      "target": ".import/adapters/fakeProvider.ts",
+      "git_blob": "4368a36c681bde0af24f51e28638327439b45771",
+      "mode": "100644",
+      "sha256": "172652ac78ae0f2d40f8596e241b336ecb6eb5a621595a57172ed2314f6e7440"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/http.ts",
+      "target": ".import/adapters/http.ts",
+      "git_blob": "713ab10afb2cabe1e730f377bc1f5a1946a49a6f",
+      "mode": "100644",
+      "sha256": "ed0382234c722b68105e9db5e5e5dc97e12a8d833151981f9e069950808a9143"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/orchestration.ts",
+      "target": ".import/adapters/orchestration.ts",
+      "git_blob": "ee831e9403939d993fd4c7b5b2d054206195d518",
+      "mode": "100644",
+      "sha256": "5ec1dd82c02ba8b44379cfe279cdf2e227fec9af9f0ea2bc2a351a228d6b7551"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/personaAdapter.ts",
+      "target": ".import/adapters/personaAdapter.ts",
+      "git_blob": "904ee1bb3599c02044b9d7bdd6265d1dce00456e",
+      "mode": "100644",
+      "sha256": "581fb5172d8d8244cebb57d12f6cb576a69630976a9d84bd1ad4519c2eeba64b"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/personaWebhook.ts",
+      "target": ".import/adapters/personaWebhook.ts",
+      "git_blob": "40af472c3b410c2977091efa8baed3c2e1c5d3b0",
+      "mode": "100644",
+      "sha256": "1358a133479789025dd852b903362ba7b7353d1f25e89e36a0c36c7c9ca95057"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/plaid-webhook-crypto.ts",
+      "target": ".import/adapters/plaid-webhook-crypto.ts",
+      "git_blob": "a88a15d34dd2d12abc4972f9864bd66da57b840d",
+      "mode": "100644",
+      "sha256": "fcd3e7ad2afce94404b804c1d3d94d84feab9846bd0a116ea26879d6df78b467"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/plaid-webhook-key-cache.ts",
+      "target": ".import/adapters/plaid-webhook-key-cache.ts",
+      "git_blob": "9b9117c7afe3605e1823fff069161c3a9757ac4c",
+      "mode": "100644",
+      "sha256": "dd3f1497cf66e11af221c43a1c7ea1e88c715f454707f45da2737e11ab32032e"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/plaid-webhook-verification.ts",
+      "target": ".import/adapters/plaid-webhook-verification.ts",
+      "git_blob": "0b28617c8faac675dc1bfa648e73a1206ef916ed",
+      "mode": "100644",
+      "sha256": "bd29a9ea867a2276583cfc71e7e1eb717e726bc61a1ce54038f32c47ba25d28f"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/plaidLegacyAdapter.ts",
+      "target": ".import/adapters/plaidLegacyAdapter.ts",
+      "git_blob": "1c10fc45a85568f6cb10712da0e890efcd6c7cfc",
+      "mode": "100644",
+      "sha256": "779596d5a31952c285c6f9f41b20ae12abf60daa68dea1fa76cd9e5b88a8b07a"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/protectedAction.ts",
+      "target": ".import/adapters/protectedAction.ts",
+      "git_blob": "90459269428e9bac11a2268caf0ee19b1ef75381",
+      "mode": "100644",
+      "sha256": "f4793713ebff4b3e8fdd226d2210c3434b278ad848a8d3f1078676c28b64408d"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/adapters/stripeIdentityAdapter.ts",
+      "target": ".import/adapters/stripeIdentityAdapter.ts",
+      "git_blob": "05d9938f65f53cd304e510299baff7e893ee40b4",
+      "mode": "100644",
+      "sha256": "0096558d76f18af7f3a9e77e4bab8b0ff88d539214125fcaf7230dcf4011ee3d"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/README.md",
+      "target": ".import/sdk/README.md",
+      "git_blob": "a31eca6532acc307927c8b7dbc8daf26fa25b66d",
+      "mode": "100644",
+      "sha256": "4ec3a169087e4a74f97d846ab3a7b3b3e5bb40446385e052cd01c28e6a990b21"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/manifests/persona.json",
+      "target": ".import/sdk/manifests/persona.json",
+      "git_blob": "a4aa14e5d905163a01b1983ed2282c31f5a3e232",
+      "mode": "100644",
+      "sha256": "2973c5464ca7a0bd3c790f9055801547465ffa50d696004dea5c15e431dc9da0"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/manifests/plaid.json",
+      "target": ".import/sdk/manifests/plaid.json",
+      "git_blob": "c1ad446244bf20cdc96bb21062759e2fb7535431",
+      "mode": "100644",
+      "sha256": "cb4b211c28e5ee673373febebd06ec984ad3ffe63a8e9079e26f0dba9ff1d92f"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/manifests/stripe_identity.json",
+      "target": ".import/sdk/manifests/stripe_identity.json",
+      "git_blob": "38d97e2b36f47fce9cb3a43d02c169878afe673c",
+      "mode": "100644",
+      "sha256": "95663c8ab7be54c57f8249b3a00f03cd8cbee7ba40a1380c57860a15e7d64130"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/manifests/test_fake.json",
+      "target": ".import/sdk/manifests/test_fake.json",
+      "git_blob": "2e04fc953a09904936ca5a5c2bbb30f28201da01",
+      "mode": "100644",
+      "sha256": "16c463d19dbdc81fbdcc9bba5987003401ef0c8d90e6621fb1c6c20ea41f335f"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/package.json",
+      "target": ".import/sdk/package.json",
+      "git_blob": "6bc0cb0280819558c49792044897f7e923efcc49",
+      "mode": "100644",
+      "sha256": "b4e8105ca2e0ed88c7eae3b67ab2275e2ed85c050720ba499b4404d26db8fad7"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/src/conformance.ts",
+      "target": ".import/sdk/src/conformance.ts",
+      "git_blob": "2fa65fe31a7c13291b262fe8294b417e5960346b",
+      "mode": "100644",
+      "sha256": "b8258cc3bfa51bfa35218df079555790e8e70c7e11a0c08b99caf291778ef057"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/src/contracts.ts",
+      "target": ".import/sdk/src/contracts.ts",
+      "git_blob": "d3b9959a4e1b4716a23b82230c146327bb678ec1",
+      "mode": "100644",
+      "sha256": "d5da8aa34d967ab629930165257463aa49098e1a6d2cd807b2607cea382eac16"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/src/errors.ts",
+      "target": ".import/sdk/src/errors.ts",
+      "git_blob": "7daa347f331e1cc5339c96b0615640ad64ca5144",
+      "mode": "100644",
+      "sha256": "1ead69f2e8be46ea2886ea1cdf8b65144033590190af54781106c89622a8417e"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/src/index.ts",
+      "target": ".import/sdk/src/index.ts",
+      "git_blob": "24eee365697ed54aa08d07d0d57c0c3184461ae6",
+      "mode": "100644",
+      "sha256": "a082bf476e66577b9ca3198cae6ff618bda2730288492492a49aff41586105c1"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/src/manifest.ts",
+      "target": ".import/sdk/src/manifest.ts",
+      "git_blob": "935c5ea4c5256f9158d5255c1db155e24c7003b7",
+      "mode": "100644",
+      "sha256": "a611e86a1d502fdf2cd13b3f121d30183467c9b7645eaa80f974b6ff875bc9bd"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/src/manifests.ts",
+      "target": ".import/sdk/src/manifests.ts",
+      "git_blob": "3c9d0ae367fd0048b1d7e849a88b523ad4badd19",
+      "mode": "100644",
+      "sha256": "6b31dc2d9f4c3fe64fd713c04ca950dacc5cc5f50c7857218521f13cb901e2fd"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/src/schema.ts",
+      "target": ".import/sdk/src/schema.ts",
+      "git_blob": "35fc632d5e31cbc2ffb4c4d7e91759c873ecbbc7",
+      "mode": "100644",
+      "sha256": "1b6f0e15285586d7050a1177ff149da8dbd8c726d6aab3338036f7326888469a"
+    },
+    {
+      "source": "verification-adapter-sdk/.import/sdk/tsconfig.json",
+      "target": ".import/sdk/tsconfig.json",
+      "git_blob": "c636f4500531acb0f8428e0028f537f64a80e083",
+      "mode": "100644",
+      "sha256": "604889eecc4e89c1e56653ea40784c56534ba912fd8f45378cc581dccb0ec86c"
+    },
+    {
+      "source": "verification-adapter-sdk/.npmrc",
+      "target": ".npmrc",
+      "git_blob": "268c392d3cb71fb4ae2f175cb7478a627f4a3a10",
+      "mode": "100644",
+      "sha256": "a11dda47bd42b80cc96afca6287e5ea3da013e8085bdad4b036e695492b36152"
+    },
+    {
+      "source": "verification-adapter-sdk/AUTHORIZATION.md",
+      "target": "AUTHORIZATION.md",
+      "git_blob": "856a3b775e8f537d49d3d77545c6413ad27b907c",
+      "mode": "100644",
+      "sha256": "ff310456d416cb1d062af0e78860ba2868ce469f0130aa5cdedf5e9b29653c63"
+    },
+    {
+      "source": "verification-adapter-sdk/CHANGELOG.md",
+      "target": "CHANGELOG.md",
+      "git_blob": "16f4e5bbb7cb7b00b0ded5468f3a34b9f2d35d66",
+      "mode": "100644",
+      "sha256": "06c26c3bfd661c3b11dc769fbbcefaaedf0f237fa6f6e56d478ef51c8d9cc4fa"
+    },
+    {
+      "source": "verification-adapter-sdk/CODE_OF_CONDUCT.md",
+      "target": "CODE_OF_CONDUCT.md",
+      "git_blob": "5012460b5a8902c2e21b7c6fefa755c5bda774b8",
+      "mode": "100644",
+      "sha256": "e7875bdfcd4d45e67f1d5216885652aed17bd3e32a3cba615d7af8ea19af0d94"
+    },
+    {
+      "source": "verification-adapter-sdk/CONTRIBUTING.md",
+      "target": "CONTRIBUTING.md",
+      "git_blob": "5c53627dc2e209f0f2aa5419af3460d9daa478ac",
+      "mode": "100644",
+      "sha256": "7ea067bf697db129df21df037fdf02c2a09f2534369987f93dc0c529df3e01e4"
+    },
+    {
+      "source": "verification-adapter-sdk/IMPLEMENTATION_CONTRACT.md",
+      "target": "IMPLEMENTATION_CONTRACT.md",
+      "git_blob": "f2a53d9947ec2627df439ebd1e69593716155761",
+      "mode": "100644",
+      "sha256": "17cac9fe241119c609bfcdeaacd5b77ad3e86cbebff00e6861294d78bfc2fe2a"
+    },
+    {
+      "source": "verification-adapter-sdk/LICENSE",
+      "target": "LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/NOTICE",
+      "target": "NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/README.md",
+      "target": "README.md",
+      "git_blob": "b80184ed3354ab1e737850a9bbecfe00bcffeb37",
+      "mode": "100644",
+      "sha256": "0c6427d12236eac898e7dbc11d66b11e739346095a4890d00f57fe86236b4c9a"
+    },
+    {
+      "source": "verification-adapter-sdk/SECURITY.md",
+      "target": "SECURITY.md",
+      "git_blob": "b6078574d93a8a031e2f45b09790d9ef97a1f3e8",
+      "mode": "100644",
+      "sha256": "18bb5b6512e84ae3ecaf9021dc5adf7b179585967081d9ac0046b9d768022d7b"
+    },
+    {
+      "source": "verification-adapter-sdk/SOURCE_INVENTORY.md",
+      "target": "SOURCE_INVENTORY.md",
+      "git_blob": "8f63d272262ac1227a22a4b1c5ae33e891a131ff",
+      "mode": "100644",
+      "sha256": "d37dcebb518457c3334c65df0f59d49bd9905c708b96fd9471cb5db61c60875f"
+    },
+    {
+      "source": "verification-adapter-sdk/UPSTREAM_SOURCE.md",
+      "target": "UPSTREAM_SOURCE.md",
+      "git_blob": "c4c99ebd3a46d14405c360a13c02c721ca83aa81",
+      "mode": "100644",
+      "sha256": "71aea7ad4133dc61deb0ca5eb58589198f57eb6d333dc42652fca172965f3537"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/NOT_COMPLIANCE.md",
+      "target": "docs/NOT_COMPLIANCE.md",
+      "git_blob": "02c437db7fa7b4b2706cf07f312679123422cd53",
+      "mode": "100644",
+      "sha256": "89cb6a5b0602232a1551831f3750bc13351fb021978224292b43b7d4eea167ef"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/SECURITY.md",
+      "target": "docs/SECURITY.md",
+      "git_blob": "b6078574d93a8a031e2f45b09790d9ef97a1f3e8",
+      "mode": "100644",
+      "sha256": "18bb5b6512e84ae3ecaf9021dc5adf7b179585967081d9ac0046b9d768022d7b"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/adapter-authoring.md",
+      "target": "docs/adapter-authoring.md",
+      "git_blob": "e0bb3f6f0d638155848ac3994da4e072b06f9c55",
+      "mode": "100644",
+      "sha256": "af8d84d86512d7915d324b1ed25033eb5ed381ece1ea94518474a73663bf896a"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/architecture.md",
+      "target": "docs/architecture.md",
+      "git_blob": "c2730e33c6802fda468890eb53c081982cb54de3",
+      "mode": "100644",
+      "sha256": "827a7d796b7f6de71c58841f229de6f3be465750024f1a51b689c3532f38c5a1"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/database-workers.md",
+      "target": "docs/database-workers.md",
+      "git_blob": "5d6b41294ae63c0954bd77d636f82cf66cde0974",
+      "mode": "100644",
+      "sha256": "6581fbfdb0d2b880cf879b0fed7797a0b5163ee8aeba1bcd8f026d9a17090934"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/migration-splitin-v2.md",
+      "target": "docs/migration-splitin-v2.md",
+      "git_blob": "32a33a1c8e801dabafcf47995422d8cf0d6f39db",
+      "mode": "100644",
+      "sha256": "a0fdeae14afbd2929ea45aada51a6dc459012ba3b3013d35f458bb7ec8092d8a"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/operations-runbook.md",
+      "target": "docs/operations-runbook.md",
+      "git_blob": "ab9851f236b968cf97117d14cb28af8bdc0d74d1",
+      "mode": "100644",
+      "sha256": "c7093be4c6799e4a7318d7b91c212f290ae4284bc04aed47c552fa76fec587a2"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/privacy-retention.md",
+      "target": "docs/privacy-retention.md",
+      "git_blob": "c21c28def55c73110c6ffa7d64133e55d21b66d1",
+      "mode": "100644",
+      "sha256": "6266fa4811a8b672da02824f47a034ac1c55dd8c822cb7bb5a9b019712df40c0"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/providers/persona.md",
+      "target": "docs/providers/persona.md",
+      "git_blob": "5e147cd4ea2b26f290d5934027801ac4c20fd138",
+      "mode": "100644",
+      "sha256": "3403c186dfe7986a0a6dfb8411ac8dc98412afadd199e11abe84cbdcee85ad06"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/providers/plaid-idv.md",
+      "target": "docs/providers/plaid-idv.md",
+      "git_blob": "2a0d98c39e484513b344976b4539fae65c2f3e93",
+      "mode": "100644",
+      "sha256": "6a413efc04404cf895886313c987069c083f8b6ed922f4d6c31cec5622907bff"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/providers/stripe-identity.md",
+      "target": "docs/providers/stripe-identity.md",
+      "git_blob": "6b6c5b851b8bb389a6efb1489a3e29a8706dc53b",
+      "mode": "100644",
+      "sha256": "656da50d54c109fa8d92a7355e52d3c416be985904253a97ac25adbcc5228a29"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/publishing.md",
+      "target": "docs/publishing.md",
+      "git_blob": "ee0fa38a6478eb0b70acfc512afa7042a17649c8",
+      "mode": "100644",
+      "sha256": "79686f222d2032859c773c611aa6aa8839cf7810e82638750f39c65725edcd42"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/quickstart-walkthrough.md",
+      "target": "docs/quickstart-walkthrough.md",
+      "git_blob": "c5302742970bf11bcd19d79b19b483af98a7aa65",
+      "mode": "100644",
+      "sha256": "c8fe04f44f4be969e556f6d115f0aad2593c93372033f60ba48771c3b86a36be"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/quickstart.md",
+      "target": "docs/quickstart.md",
+      "git_blob": "6cdde08118cc28cf5f9bc5cc83beba4dbc564e39",
+      "mode": "100644",
+      "sha256": "3054b2f6422350e25ab8abf4d6e6abb379eb40e2c9b67395fa585f714798aecb"
+    },
+    {
+      "source": "verification-adapter-sdk/docs/threat-model.md",
+      "target": "docs/threat-model.md",
+      "git_blob": "4056fedbcb81afe712c4cb997b7ebc1395f13dad",
+      "mode": "100644",
+      "sha256": "b5a7f43515bf4f266979e0d0625abf0c35adb2c0a8e13a901d95cbc26b3b97b0"
+    },
+    {
+      "source": "verification-adapter-sdk/eslint.config.js",
+      "target": "eslint.config.js",
+      "git_blob": "43ab5feb2460cc5f66f52edfcf9395f31678dcea",
+      "mode": "100644",
+      "sha256": "8c62860bc0adfbc1d8cd5d2740d99bb5800a1744c5d09d7108b8eab590464768"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/express-postgres/README.md",
+      "target": "examples/express-postgres/README.md",
+      "git_blob": "45367af8639e7f30407d022c949abdca7f27fa85",
+      "mode": "100644",
+      "sha256": "cbf47092809be53ca75d57f9f4a0768b5a220e79a25c69c744c292fa39671a07"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/express-postgres/package.json",
+      "target": "examples/express-postgres/package.json",
+      "git_blob": "ea99fc8afce7a427bb6cab89dbc64ea18a753779",
+      "mode": "100644",
+      "sha256": "f759886796ab18b1bea9ba4eb96fd76298fd8f40ce15f793172c3cebadfba072"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/express-postgres/src/server.ts",
+      "target": "examples/express-postgres/src/server.ts",
+      "git_blob": "3b96a364306505a711ed68a94c6a5ba4d9018ad3",
+      "mode": "100644",
+      "sha256": "1bf7a1a385443125491923cf580fc97c655870640176cc3cf29f425481f24ed3"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/fourth-provider/README.md",
+      "target": "examples/fourth-provider/README.md",
+      "git_blob": "8be2aef90628e3697e4468d71b2e3dafe9d6212a",
+      "mode": "100644",
+      "sha256": "2a8823c4d9fc718be88939d58ab5ab3892f5ebbf9dfee6ef6dea56682893aad3"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/fourth-provider/package.json",
+      "target": "examples/fourth-provider/package.json",
+      "git_blob": "a473a239c186d51e737fdb99a0aaa602cfe8976d",
+      "mode": "100644",
+      "sha256": "ec811e79065c44e84d977b457d8ea39604a15785712d69348821935de92ca343"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/fourth-provider/src/conformance.ts",
+      "target": "examples/fourth-provider/src/conformance.ts",
+      "git_blob": "c0cfe02d9b4356173e61fbb7377395a1fe32e27e",
+      "mode": "100644",
+      "sha256": "b5d0ee2775ca0bf75da64f6d19f3e2d8f009fac3d8c9ec921f522e7c15f8639e"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/fourth-provider/src/index.ts",
+      "target": "examples/fourth-provider/src/index.ts",
+      "git_blob": "d311c3d7ea9e524269384376f9e3831681220013",
+      "mode": "100644",
+      "sha256": "457eee9be8450c44102793b452630376dc506fd861aa9f6709a3e917bc9234fb"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/hono-worker/README.md",
+      "target": "examples/hono-worker/README.md",
+      "git_blob": "9332208934fc25aa64e7291f5cc6e9a0c14068d3",
+      "mode": "100644",
+      "sha256": "22dcf22d42375b5cda5ec8ae51d76ff144cfec1ef36738102916eed731d47278"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/hono-worker/package.json",
+      "target": "examples/hono-worker/package.json",
+      "git_blob": "8a1673ba2c5893fd966dfadb8df071c7639ea6e2",
+      "mode": "100644",
+      "sha256": "a244b04bff80775cd0499bdd94b6a245f62a5558afd3ef38cc02891ae39810bc"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/hono-worker/smoke.mjs",
+      "target": "examples/hono-worker/smoke.mjs",
+      "git_blob": "0c1b2e8e974e5a43783ad522eb73f7855d4c51a3",
+      "mode": "100644",
+      "sha256": "acef962114c0ddd96dad99b9b5969f6e947929859b8ec881ae1dbc92988d07e2"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/hono-worker/src/worker.ts",
+      "target": "examples/hono-worker/src/worker.ts",
+      "git_blob": "c4c7699ffaa6d67ab764088b32a634d5135dcd0a",
+      "mode": "100644",
+      "sha256": "3c77e9e30ffab8e09528b11eb8078f851b3b9d643b9f3367322d2fc8e66311c9"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/protected-action/README.md",
+      "target": "examples/protected-action/README.md",
+      "git_blob": "7f996571f25995c67a52ee7d7d163322a5c8b4fa",
+      "mode": "100644",
+      "sha256": "574fdfa6aee207d2bfd2da42e32fd9308cd404ea3dca7c6aac6f925b9abb8829"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/protected-action/package.json",
+      "target": "examples/protected-action/package.json",
+      "git_blob": "26acdd63fe4c3b8a4a0b199caf9b38dffc280984",
+      "mode": "100644",
+      "sha256": "6fa8d82a0cedbd4fd0eb2ba2880b3b4f952ccc37f8fca674272261230ed0bf26"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/protected-action/src/gate.ts",
+      "target": "examples/protected-action/src/gate.ts",
+      "git_blob": "f3f1c5af4aa82931db8a49b3ccce0a80060a7cd5",
+      "mode": "100644",
+      "sha256": "ceb4268647539d16a54357f9a1c8991de8456097209a9d57532bc4248c1fe930"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/react-launcher/README.md",
+      "target": "examples/react-launcher/README.md",
+      "git_blob": "c1495e53527cc9954c37494d053f32d042ce47b1",
+      "mode": "100644",
+      "sha256": "906f01227f43dc363619f47e2cf43ced9a6717756c06bafa3b396c0c92289294"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/react-launcher/package.json",
+      "target": "examples/react-launcher/package.json",
+      "git_blob": "2c9cdcc0d79ecfd5201b516d6c228d8ecd3ddc4b",
+      "mode": "100644",
+      "sha256": "f23e150d910831d7e58a72f2add09eacd05592dc53c2cb5ec1f49bd89fa3e7f0"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/react-launcher/src/console.ts",
+      "target": "examples/react-launcher/src/console.ts",
+      "git_blob": "0de489a30594f61cf9364f2c191e87572cf5de5d",
+      "mode": "100644",
+      "sha256": "7054cd77e1615244760c90cd28f975f7228b5eccaf826e07c4f49d0cbe816c4d"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/supabase-edge/README.md",
+      "target": "examples/supabase-edge/README.md",
+      "git_blob": "776a17495c79e092f1de8d54c5af48d23d378e11",
+      "mode": "100644",
+      "sha256": "b07bfc690f1520f55287c389c1609636eca9c30d2583b967e157b3694d38ed7d"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/supabase-edge/package.json",
+      "target": "examples/supabase-edge/package.json",
+      "git_blob": "450f3598169059f14f5e2e030f9d41e6373402b7",
+      "mode": "100644",
+      "sha256": "70c5d20ccf3c864f33d280fcb5d7d6c28cad9bb2f15f6905453ad5c9f0fe900a"
+    },
+    {
+      "source": "verification-adapter-sdk/examples/supabase-edge/src/index.ts",
+      "target": "examples/supabase-edge/src/index.ts",
+      "git_blob": "b3a848a13255aca07142d7ac7bccc91774c73338",
+      "mode": "100644",
+      "sha256": "290d8e405178e96a805b90b6ba8679975ac6f8ba50144c15090babd265f54708"
+    },
+    {
+      "source": "verification-adapter-sdk/package-lock.json",
+      "target": "package-lock.json",
+      "git_blob": "4546dc20813fad85cf35f97cbe4de65717b2fd50",
+      "mode": "100644",
+      "sha256": "4058fce5696b0afc537280a06297bc5dfe98124c48d0ad59676c77532006cb47"
+    },
+    {
+      "source": "verification-adapter-sdk/package-size-budgets.json",
+      "target": "package-size-budgets.json",
+      "git_blob": "c410c9169bca630f104996a463a605f37f1856ac",
+      "mode": "100644",
+      "sha256": "b9d231d7d2c04e5f4beda4245c1b0efd3e6e8c9a84795c6b24e7c2d3e048d21f"
+    },
+    {
+      "source": "verification-adapter-sdk/package.json",
+      "target": "package.json",
+      "git_blob": "f4338197b7f7e8b9546a73e02fee24f0adeb4c6c",
+      "mode": "100644",
+      "sha256": "24e0ee94d86c57763c0cf0b78a3e6824dd1a8a5383badf323f9a651d528ee655"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/LICENSE",
+      "target": "packages/verification-adapter-persona/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/NOTICE",
+      "target": "packages/verification-adapter-persona/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/README.md",
+      "target": "packages/verification-adapter-persona/README.md",
+      "git_blob": "72218fe20adb8606355de405ed61e775e8d03236",
+      "mode": "100644",
+      "sha256": "bafa01dbfc41c1887b3e9711d4b071b3cfe5c209709ec3a355262dd693bcdf03"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/package.json",
+      "target": "packages/verification-adapter-persona/package.json",
+      "git_blob": "6775dfb26de5b33db1738d390838c78bc29645f2",
+      "mode": "100644",
+      "sha256": "0557cbde373d6d3537fd2bf1d048e238a50e37198b77949352e368b41997e7c0"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/adapter.ts",
+      "target": "packages/verification-adapter-persona/src/adapter.ts",
+      "git_blob": "c611abd2b26faa39db2c1e8968fea1733a0ccc4e",
+      "mode": "100644",
+      "sha256": "1fa40149b80bf973ffae20affa1005bac7cab4e27280481e9f5c47573c0d3cb1"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/browser.ts",
+      "target": "packages/verification-adapter-persona/src/browser.ts",
+      "git_blob": "82ac6df696f575e2ac62ce31e4de5d4ef24c6d49",
+      "mode": "100644",
+      "sha256": "98d55ad0353e842d187e5030dcedf565d62855d91c1a35fb18f537d6e82d491b"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/configuration.ts",
+      "target": "packages/verification-adapter-persona/src/configuration.ts",
+      "git_blob": "3e48584e17c8ce8dbe71a85cb2aa4d8ec53310af",
+      "mode": "100644",
+      "sha256": "a26f7a6da8077bc8ad3e14f7f7e74566ba4d48f3d6ef86a0307c7ec8357ae184"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/constants.ts",
+      "target": "packages/verification-adapter-persona/src/constants.ts",
+      "git_blob": "a09fc68cb1d95e5a89c709d286a562fc8c505f77",
+      "mode": "100644",
+      "sha256": "b0fb41590c9b2478c00517b3ad943ba4c146a8b435bf35d22d14259df65acdd0"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/index.ts",
+      "target": "packages/verification-adapter-persona/src/index.ts",
+      "git_blob": "bcf28c390c43330d9bef725d2fb6cf2f933f4aaa",
+      "mode": "100644",
+      "sha256": "562f33faf8996dcdd4bc617f875e37b595ba9f1b0f0c8d5d1cf67f4197110efa"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/manifest.ts",
+      "target": "packages/verification-adapter-persona/src/manifest.ts",
+      "git_blob": "3cf39d6c27edb487ea356b33d751c384269d91cd",
+      "mode": "100644",
+      "sha256": "3e3a72caf00e0efa083fe2c645cd2d38d709e5a98a0cb5692b8999a283f95171"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/status.ts",
+      "target": "packages/verification-adapter-persona/src/status.ts",
+      "git_blob": "6c9d37ccbdbd3d66707fbf5c37a6e30bcb5ac7c3",
+      "mode": "100644",
+      "sha256": "e4d0902ae4070f0d56989894500f0a5a996e80809173c107dff5776d9d09532b"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/types.ts",
+      "target": "packages/verification-adapter-persona/src/types.ts",
+      "git_blob": "a11931122c36afd2063161fa2bd10b5b166e089f",
+      "mode": "100644",
+      "sha256": "8f4f644f7a6f7fbf0bc3a94a87a058ebe78b048eb1aac69d70bf73c7da6a3934"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/util.ts",
+      "target": "packages/verification-adapter-persona/src/util.ts",
+      "git_blob": "9d25840f0e1fc1d0751e9b6f22a65540a9cde6bc",
+      "mode": "100644",
+      "sha256": "6c0e87db4969425ad3b3688620f5ad9eb991cd6c5dfc4f609c5369a2806d8dcf"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/vendor-modules.d.ts",
+      "target": "packages/verification-adapter-persona/src/vendor-modules.d.ts",
+      "git_blob": "00ccfd58afcdad189fcd59931af72c13d5b42908",
+      "mode": "100644",
+      "sha256": "3513e469ee5a16e52704d42605d4eb1c12788042f2e53b694e97575de8a55794"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/src/webhook.ts",
+      "target": "packages/verification-adapter-persona/src/webhook.ts",
+      "git_blob": "238769f5c89dca425cdfd4e0c94e932e64866367",
+      "mode": "100644",
+      "sha256": "de3f17f5f33bc2d59990c3f8f034d74b970c82273051117468362fcead27d094"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/adapter.test.ts",
+      "target": "packages/verification-adapter-persona/tests/adapter.test.ts",
+      "git_blob": "35b29dac722b4c4b02b2e603f0c4eeefc6c81b25",
+      "mode": "100644",
+      "sha256": "af90158e1c02bf967d63a9307bd99864bf1032408fca38c0c2c9e365390cc6d9"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/conformance.test.ts",
+      "target": "packages/verification-adapter-persona/tests/conformance.test.ts",
+      "git_blob": "df54ca9f063a6ba858fe5f59f85cfe370e95dc18",
+      "mode": "100644",
+      "sha256": "1d9432df83d9569081d8d9168daa6b006898dd89e703f586f4cc918955b7cf7a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/fixtures/create-inquiry.json",
+      "target": "packages/verification-adapter-persona/tests/fixtures/create-inquiry.json",
+      "git_blob": "a372241455091cf4588a7d7deacabd896a4b6e99",
+      "mode": "100644",
+      "sha256": "2e010eb1f76369b6adabd42f9c1f96e6574f1ee4a3138cd0808bf51793c73ec4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/fixtures/decline.json",
+      "target": "packages/verification-adapter-persona/tests/fixtures/decline.json",
+      "git_blob": "8cfa500ee4cf859ad3734136ffd5eade17335396",
+      "mode": "100644",
+      "sha256": "a89bba3f31ef4fadbffeaab8ad2d8baa7ca06fdf1f81edfa6459f3d7f1f17002"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/fixtures/expire.json",
+      "target": "packages/verification-adapter-persona/tests/fixtures/expire.json",
+      "git_blob": "bd9ec7aaae83b1250c7ad2d68a13900d60311144",
+      "mode": "100644",
+      "sha256": "feb765cab7ee17a117f320de2882702e1cd7415696745c7151ee1c8754a8d53e"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/fixtures/resume-inquiry.json",
+      "target": "packages/verification-adapter-persona/tests/fixtures/resume-inquiry.json",
+      "git_blob": "c36a142651f783ffe4745ec0c4025e649a0dee48",
+      "mode": "100644",
+      "sha256": "d00f4d8bd2d50a71d6ca8927b7e734203e4a14837ee616ed79b6efbbb053cd20"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/fixtures/review.json",
+      "target": "packages/verification-adapter-persona/tests/fixtures/review.json",
+      "git_blob": "21a39011bd38aee25350b61ccc15a1b56027dac5",
+      "mode": "100644",
+      "sha256": "c6b7b3638949ff24b261d5dd27ecfcd45485f495ce77615b4aa7a411cd2dd9a9"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/fixtures/success.json",
+      "target": "packages/verification-adapter-persona/tests/fixtures/success.json",
+      "git_blob": "33861794d757e30ac47291fc66fcbc8c4f3c27cf",
+      "mode": "100644",
+      "sha256": "d684ad961d5c842d709697e2e22a941d5df8b2bc2499c11a2fdb5c9dd696c8fd"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/fixtures/webhook-approved.json",
+      "target": "packages/verification-adapter-persona/tests/fixtures/webhook-approved.json",
+      "git_blob": "536613995b7a2b76f88c2cc3c8273807053cd699",
+      "mode": "100644",
+      "sha256": "5f00108e483f154bcc1ad1ef7393c6fb9f8540b66bd422d96b3bb551db3ea645"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/fixtures/webhook-declined.json",
+      "target": "packages/verification-adapter-persona/tests/fixtures/webhook-declined.json",
+      "git_blob": "55d83f60e3989352a359bb5c877256f5655223d8",
+      "mode": "100644",
+      "sha256": "a5a14cdff936546b56c9bb9e959706736d9ff2630594569e3404159e54ca2eac"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/helpers.ts",
+      "target": "packages/verification-adapter-persona/tests/helpers.ts",
+      "git_blob": "9def4035c04f177398ae78c052ea940edac7fb4b",
+      "mode": "100644",
+      "sha256": "175dfc5a3a3981a49118eb8d5bc7a6856c1841ad15a11e0a0dc891b7a3b96f06"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/sandbox-contract.test.ts",
+      "target": "packages/verification-adapter-persona/tests/sandbox-contract.test.ts",
+      "git_blob": "74c2e3997bbcb8ae3f07abb37ad5cdb749b3576e",
+      "mode": "100644",
+      "sha256": "e2e490fcf31bdb132612500c87758706fe86d40b495a8717c95ae00aed2f2b7d"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tests/webhook.test.ts",
+      "target": "packages/verification-adapter-persona/tests/webhook.test.ts",
+      "git_blob": "b09ddfa9b29efdb64471ada3587d70247b3d2a75",
+      "mode": "100644",
+      "sha256": "5f115844ebb4dd2a25a39c3d4b271dadd9f8da88f2f6fb03447f39b310405fa3"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tsconfig.json",
+      "target": "packages/verification-adapter-persona/tsconfig.json",
+      "git_blob": "de1bf7b657cd0024c543c9d84da4a675d1292f81",
+      "mode": "100644",
+      "sha256": "2b4f097965322374286171361a07bb1bc8e70e19181c9e5e9789848e631835aa"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/tsup.config.ts",
+      "target": "packages/verification-adapter-persona/tsup.config.ts",
+      "git_blob": "4d4396a195d2b7c9cc2b5d0efa52217f39c1b15c",
+      "mode": "100644",
+      "sha256": "ef98b2f740317d921a71b1e51eb37c7e0724feccd58a7e9a333c8eade36b5cd9"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-persona/vitest.config.ts",
+      "target": "packages/verification-adapter-persona/vitest.config.ts",
+      "git_blob": "c10923f2ed119fbcddf6672a6ab63ef52664f80b",
+      "mode": "100644",
+      "sha256": "5bcb1e59748d2e1585557127ea38aca33f5bef2b8fe2362276e51dca335b9111"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/LICENSE",
+      "target": "packages/verification-adapter-plaid-idv/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/NOTICE",
+      "target": "packages/verification-adapter-plaid-idv/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/README.md",
+      "target": "packages/verification-adapter-plaid-idv/README.md",
+      "git_blob": "02da9f82cdf63c033298c5e3e5a9ac5c33a0b118",
+      "mode": "100644",
+      "sha256": "1c65549c16ee881532cad67133e8f288275f443e45fadbd0fcb25e15a6705f2a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/package.json",
+      "target": "packages/verification-adapter-plaid-idv/package.json",
+      "git_blob": "c96895d3c162d6eeec9b58afaae8e68e9657462e",
+      "mode": "100644",
+      "sha256": "bc31b4c3c9201c8df10fcc7463974db972784eca805d6a6edd9615bb1dc4c467"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/adapter.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/adapter.ts",
+      "git_blob": "3932cb394550c2ecd631f5319f0e26d46ea9fb0b",
+      "mode": "100644",
+      "sha256": "7aa3242faca6706fa31aae926d423d918eb3c4537685481058b5ec9f0c5d6f44"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/browser.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/browser.ts",
+      "git_blob": "e47ba4d698e2e3cc56736180bde9c126577fffc4",
+      "mode": "100644",
+      "sha256": "7732294c85ee46fcc3afdcd02aeb4acfb157c655d4219e6a9c2809abd707ac8a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/configuration.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/configuration.ts",
+      "git_blob": "6e5572e9c2e74c00eaac658ca91926b4353e387e",
+      "mode": "100644",
+      "sha256": "86f40f24c347197d59a5ede6d23da80eb86e8f2a59d20a1d4de8afed9ee81856"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/constants.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/constants.ts",
+      "git_blob": "caa23fab29f66393baf81a10af978c1517c98f87",
+      "mode": "100644",
+      "sha256": "18f312ae32f801355128e64473623add5cf66b03dfaa8d39cfa48237b9dd74ae"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/index.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/index.ts",
+      "git_blob": "3a604260901b80a2961949a94712b4f406449d4b",
+      "mode": "100644",
+      "sha256": "12cb86eb7dd2f7e4e7b90daca4cb35c2102fde405cfbabd6dee6bbbef1e035ba"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/manifest.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/manifest.ts",
+      "git_blob": "76f6af4970a3aad15e3f8616f1064c0068416782",
+      "mode": "100644",
+      "sha256": "413ca24e48e1643c001be01c941b4424468efd67f0cd830e17aa804ea5673262"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/status.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/status.ts",
+      "git_blob": "f548936917994bf12f2ff000fbcaaed8f3dfe06b",
+      "mode": "100644",
+      "sha256": "ba0ca802201043df057bb6072b9a40f826854cc5693efad1deba889c18cfb6b3"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/vendor-modules.d.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/vendor-modules.d.ts",
+      "git_blob": "c09675c2834bc5de33e7063c96fba9653cf31af5",
+      "mode": "100644",
+      "sha256": "caab5ce58e05a44ec579edb9b92cb028ab292c7a3b782ae792675e7df3f9ea9d"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/webhook-crypto.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/webhook-crypto.ts",
+      "git_blob": "0110ab7bcf73f4c43b52a4ea8d92260280ab9e15",
+      "mode": "100644",
+      "sha256": "2b23ee739165777d6d064d0eaa0d4a0d2f9f013d32dac50c03712615ab20e7bf"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/webhook-key-cache.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/webhook-key-cache.ts",
+      "git_blob": "2e029abed5a84359b60d144c973345bad5183e14",
+      "mode": "100644",
+      "sha256": "e012314b99f3f0b436cfaa78345c2a97ce8958314c932ca8cf3544037d72e284"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/src/webhook.ts",
+      "target": "packages/verification-adapter-plaid-idv/src/webhook.ts",
+      "git_blob": "a765a055b646287c826b48e708718c54e3f859c8",
+      "mode": "100644",
+      "sha256": "b1a229306c4089f3743f823d5eadd296c181929e386b58191c2661e25b7a4dcb"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/adapter.test.ts",
+      "target": "packages/verification-adapter-plaid-idv/tests/adapter.test.ts",
+      "git_blob": "966a9833803a51a79f1b1061cc04b7b1324fbef5",
+      "mode": "100644",
+      "sha256": "06402371330dc23b1e6f1d4a9fd94a49cc4491df255e6ab758fbf094aab3da0a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/conformance.test.ts",
+      "target": "packages/verification-adapter-plaid-idv/tests/conformance.test.ts",
+      "git_blob": "61037d69105350897b332658f8337de462c96889",
+      "mode": "100644",
+      "sha256": "f021189b6e8fea9c1b98e37d8e648c69c8a5b8255f93d8cfa878bdc1409b28b4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/fixtures/create.json",
+      "target": "packages/verification-adapter-plaid-idv/tests/fixtures/create.json",
+      "git_blob": "3c4d365f1feb1c1155148d9908da367d6fbbfa93",
+      "mode": "100644",
+      "sha256": "66af5d5f4611c1074d76a4507245b00bbaca7c0d3338aa16fc9118362584b697"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/fixtures/decline.json",
+      "target": "packages/verification-adapter-plaid-idv/tests/fixtures/decline.json",
+      "git_blob": "9fb8b3abde1a385fd782ea23c6a269944811ba8f",
+      "mode": "100644",
+      "sha256": "eb1a6109b5c2ee1a8db3ea33f6f5f2d475523a7acdbfd544ec210d60754077c9"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/fixtures/link-token.json",
+      "target": "packages/verification-adapter-plaid-idv/tests/fixtures/link-token.json",
+      "git_blob": "1610f5b42e5eabc3a73aeae19e6ae70558550398",
+      "mode": "100644",
+      "sha256": "370d99787379e12922ad2c08fc54f3def44e818e6005e7ccd8409055c420e619"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/fixtures/retry.json",
+      "target": "packages/verification-adapter-plaid-idv/tests/fixtures/retry.json",
+      "git_blob": "37df5e71b9a0bc8b7ad2bd0b4ba3480ed41ea927",
+      "mode": "100644",
+      "sha256": "fe52e01d556c447b359959b7b78ab97e0aeba94c183919e03ad326b52ada1f0b"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/fixtures/review.json",
+      "target": "packages/verification-adapter-plaid-idv/tests/fixtures/review.json",
+      "git_blob": "0bc1af17a385a9a44f086342af6d9caae86e1c6f",
+      "mode": "100644",
+      "sha256": "5f65b85eb6d0f1d594da6c9c05141743d395e30d867edf1f15d080097b36fc8d"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/fixtures/success.json",
+      "target": "packages/verification-adapter-plaid-idv/tests/fixtures/success.json",
+      "git_blob": "8c8b78774f38db9fa09703a3a3583493d42958a9",
+      "mode": "100644",
+      "sha256": "743158b1cc254b42b199b96b21abe75a2c57a69ad7629965ae8aade8c2b3c92b"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/fixtures/webhook-success.json",
+      "target": "packages/verification-adapter-plaid-idv/tests/fixtures/webhook-success.json",
+      "git_blob": "a4de1bf2a9a77693de7e07b3a962d9cd774490d0",
+      "mode": "100644",
+      "sha256": "0eab101f3316d76b8da193923b107e8e03235b02bf2d96ed1c227aaae39fbea1"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/helpers.ts",
+      "target": "packages/verification-adapter-plaid-idv/tests/helpers.ts",
+      "git_blob": "c83deae4d6daaf6749411b7a51717f9c0e27dc9e",
+      "mode": "100644",
+      "sha256": "ac3d83102ccd9a1cfa29538ad2446105d0c3fa5189498bdf1ab8aeb0c684a7ef"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/sandbox-contract.test.ts",
+      "target": "packages/verification-adapter-plaid-idv/tests/sandbox-contract.test.ts",
+      "git_blob": "fbde3b7e3dab63f0e688ef3f2f1179c0012caef4",
+      "mode": "100644",
+      "sha256": "0ef4ce01ecd1a183f047696419cd8516dea611dd8393bcd5c2ca0b3a5ea54cb7"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tests/webhook.test.ts",
+      "target": "packages/verification-adapter-plaid-idv/tests/webhook.test.ts",
+      "git_blob": "85c6b7dab1c0bd4fbda244623ee26a8412d198b1",
+      "mode": "100644",
+      "sha256": "201c0ee3442c3a7bc743aa1dc9603dcaa53a52727a22446544555725978be7d8"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tsconfig.json",
+      "target": "packages/verification-adapter-plaid-idv/tsconfig.json",
+      "git_blob": "de1bf7b657cd0024c543c9d84da4a675d1292f81",
+      "mode": "100644",
+      "sha256": "2b4f097965322374286171361a07bb1bc8e70e19181c9e5e9789848e631835aa"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/tsup.config.ts",
+      "target": "packages/verification-adapter-plaid-idv/tsup.config.ts",
+      "git_blob": "cbde76313dc24d2e5a63c7377b1e8c499c658488",
+      "mode": "100644",
+      "sha256": "a2cc7ae4e558a2754faf802c6a2ee8cda5524a2c154203ee504ec07c0fee8614"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-plaid-idv/vitest.config.ts",
+      "target": "packages/verification-adapter-plaid-idv/vitest.config.ts",
+      "git_blob": "c10923f2ed119fbcddf6672a6ab63ef52664f80b",
+      "mode": "100644",
+      "sha256": "5bcb1e59748d2e1585557127ea38aca33f5bef2b8fe2362276e51dca335b9111"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/LICENSE",
+      "target": "packages/verification-adapter-sdk/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/NOTICE",
+      "target": "packages/verification-adapter-sdk/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/README.md",
+      "target": "packages/verification-adapter-sdk/README.md",
+      "git_blob": "e6b4f7d09d507d775e62f4a0773f8fb8c5a5a3f5",
+      "mode": "100644",
+      "sha256": "bfefce14e7686fd8d9c18c5cc3dce70d3e5539099ed1c020f9abc3f4fb975d94"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/package.json",
+      "target": "packages/verification-adapter-sdk/package.json",
+      "git_blob": "7aabfab7957fdad44c71b46c430314acb0dad927",
+      "mode": "100644",
+      "sha256": "64ef876aeb657cdc6f2efc3ca84e10ed9303611ae3b4f897ad21316859db5cf4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/src/conformance-entry.ts",
+      "target": "packages/verification-adapter-sdk/src/conformance-entry.ts",
+      "git_blob": "784eddd8925880ca1064e184c456e57be845ae74",
+      "mode": "100644",
+      "sha256": "d54f5340c044e3376a6bdabd86e228096f631f104c3b8be21fa9a216280caa51"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/src/conformance.ts",
+      "target": "packages/verification-adapter-sdk/src/conformance.ts",
+      "git_blob": "a0a82211d69a02e07d58453aaf17a08b5c0f5de6",
+      "mode": "100644",
+      "sha256": "4b3adcd5a98657fa2549aea430897c0962bd1538e1220155250d2032bbce77d2"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/src/contracts.ts",
+      "target": "packages/verification-adapter-sdk/src/contracts.ts",
+      "git_blob": "287ca57691e585442c1986b313af5488ca001c65",
+      "mode": "100644",
+      "sha256": "dff575049a69a4dd38986e1468c39705bd6fca271439fdabcefde61bdfe4cb1c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/src/errors.ts",
+      "target": "packages/verification-adapter-sdk/src/errors.ts",
+      "git_blob": "95f38661d3a15dec4ebe186d5671bb58c2770469",
+      "mode": "100644",
+      "sha256": "b48bc9eade658ac9e9a268b090db8e3e4d4f59ffb907e3eeaddf942e25d98b30"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/src/fakes.ts",
+      "target": "packages/verification-adapter-sdk/src/fakes.ts",
+      "git_blob": "763473c34d5c3aeb672aae7adbed3370636f4b6e",
+      "mode": "100644",
+      "sha256": "20dda4fb110e8436a1575071f1b25802e23fe64d2a60efd47e24c0a15eec0e76"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/src/helpers.ts",
+      "target": "packages/verification-adapter-sdk/src/helpers.ts",
+      "git_blob": "d2fa6da579b4ce8c2ff2f8a0adc6282590750d5f",
+      "mode": "100644",
+      "sha256": "5a47f20ca460e1d38c6666801874869a91263f99351f31639184c9a8325d60f8"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/src/identifiers.ts",
+      "target": "packages/verification-adapter-sdk/src/identifiers.ts",
+      "git_blob": "89ff6b2943e395745b58f9357d669f54ba7ec66d",
+      "mode": "100644",
+      "sha256": "e193e771aa63466e4a5d83a26e316861ce6c33aed2f4d5a16a7269ebc8613d67"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/src/index.ts",
+      "target": "packages/verification-adapter-sdk/src/index.ts",
+      "git_blob": "b041bfc9f8919fe68e59ad03fded34ffdabbfc67",
+      "mode": "100644",
+      "sha256": "c7af3907425443e3ee6538257907730eaeb77c1f5f7eb3103aaf0e4f4b06c2e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/src/manifest.ts",
+      "target": "packages/verification-adapter-sdk/src/manifest.ts",
+      "git_blob": "22b1a88309efab770186873b88efbb00cde3fecc",
+      "mode": "100644",
+      "sha256": "d2cc2ceda7e9fe762f713dee700ccb69b4f240af94657d0f66dc7d32791420d7"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/src/schema.ts",
+      "target": "packages/verification-adapter-sdk/src/schema.ts",
+      "git_blob": "39b09fbe58d2701c0814b6f59dff0a0000ff378a",
+      "mode": "100644",
+      "sha256": "2cadc03778bc751bafe53e902b35bd1bd8d1146f4327ddd49792331234c382ab"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/tests/core.test.ts",
+      "target": "packages/verification-adapter-sdk/tests/core.test.ts",
+      "git_blob": "a6afc9ca960a53be55302b51ba8b16c513405ed9",
+      "mode": "100644",
+      "sha256": "ad94f50e69b1447e0cd2ba98494d4d41818632112bd69f49417f97ea6b64649f"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/tsconfig.json",
+      "target": "packages/verification-adapter-sdk/tsconfig.json",
+      "git_blob": "de1bf7b657cd0024c543c9d84da4a675d1292f81",
+      "mode": "100644",
+      "sha256": "2b4f097965322374286171361a07bb1bc8e70e19181c9e5e9789848e631835aa"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/tsup.config.ts",
+      "target": "packages/verification-adapter-sdk/tsup.config.ts",
+      "git_blob": "f15b4201258ace2a0975de7c27162a01668f6583",
+      "mode": "100644",
+      "sha256": "e83ed7b949017dda26820493e6bcf6ca433dbd8010f86cc2d5ddd7f3611068f4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-sdk/vitest.config.ts",
+      "target": "packages/verification-adapter-sdk/vitest.config.ts",
+      "git_blob": "7e4386b33b480fadba913417edb69732784146c9",
+      "mode": "100644",
+      "sha256": "638e702c5557885860057d93ae33aed55b1a0fd4c07f7341f4758fee6d68b07d"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/LICENSE",
+      "target": "packages/verification-adapter-stripe-identity/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/NOTICE",
+      "target": "packages/verification-adapter-stripe-identity/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/README.md",
+      "target": "packages/verification-adapter-stripe-identity/README.md",
+      "git_blob": "221348f6ffaca0aafe1761e1a1078e14015dbea9",
+      "mode": "100644",
+      "sha256": "dc098743c4990c2ea067437106f21ed5339913fb8d613f6f548959b0901f9afd"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/package.json",
+      "target": "packages/verification-adapter-stripe-identity/package.json",
+      "git_blob": "71f9c127e339d6e1842f3ad3f412e8539ab4fc1e",
+      "mode": "100644",
+      "sha256": "777f0f973b4050c21b47afa22fd6bb02a36e4d70f399f8958eaa2dd2cfc057c4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/adapter.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/adapter.ts",
+      "git_blob": "b62822a2695a9fa8f4d1a544fe7f8f84d9336e3b",
+      "mode": "100644",
+      "sha256": "fdc40d3bd69d5c5cdf104844a9946199e5bcc3bf22a793acae646c51004bd008"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/browser.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/browser.ts",
+      "git_blob": "e2f28e02935098bdb8f081bf13bf5fb3e2032efa",
+      "mode": "100644",
+      "sha256": "60ddee46e75fc3a0f4556a3b3e5f9ea88c55b209a9710336711dfd54f3418927"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/configuration.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/configuration.ts",
+      "git_blob": "e20cef26f63711a01640649bf56fca57d5da397f",
+      "mode": "100644",
+      "sha256": "813a1dc94ec5001bcfee610f14f27c524b35716b684bc9bbd3e0a777952d710a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/constants.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/constants.ts",
+      "git_blob": "ac70734b4749a9fe15ad4893f7f121b0672bb1c1",
+      "mode": "100644",
+      "sha256": "edfd25194f5bf9dd133d686e8ac55b1a289c7f11462daa494cf0cdf0454f9bb5"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/index.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/index.ts",
+      "git_blob": "d7c30f894c93904c901e76a0630f65459ce48e29",
+      "mode": "100644",
+      "sha256": "c45cab818850ab5795b6f1cf416b2bc03e1b0ee14e38966c594ec90e99e14966"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/manifest.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/manifest.ts",
+      "git_blob": "64fbbe8a9f25d1088d61e89b1dd73b6bd7734dbd",
+      "mode": "100644",
+      "sha256": "71148f955b3149d19aea765df95331b35e1ebc6796e0825afed84fbe2e5aa2c9"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/status.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/status.ts",
+      "git_blob": "ef1abe1f511d3ad4ae94333a8f7b6ccb22844bac",
+      "mode": "100644",
+      "sha256": "55277cf7e4e11dca37e8f6550d723d12d4ecc75504e2c00aada7a7022a98fcc8"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/types.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/types.ts",
+      "git_blob": "89f64c4f54fb21fcb0f9b0bb9cf8a70094483bcb",
+      "mode": "100644",
+      "sha256": "84cc87ed94837bcd1ba8d898ae4ab072336ca583e91833c757b7e31473aafe28"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/util.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/util.ts",
+      "git_blob": "887d163ad6b13bc3804ea97bc17aec31c272210a",
+      "mode": "100644",
+      "sha256": "47e707d81e0ab55ba22aa5449fbe1280f106993cbd2030d3569e3e1ab1384513"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/vendor-modules.d.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/vendor-modules.d.ts",
+      "git_blob": "248c397f72b5741dd3e1cad691c8f8a69cb9f979",
+      "mode": "100644",
+      "sha256": "e6c7569c8171305339c76d8b86aa540622e7afc76221df06e11e5872450f6eee"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/src/webhook.ts",
+      "target": "packages/verification-adapter-stripe-identity/src/webhook.ts",
+      "git_blob": "0e1b4e25e8d66e8b9ba7c6c4365469cd7ea06c0b",
+      "mode": "100644",
+      "sha256": "f3d1fe7f8766911ad09e85f4c032ab4e931d5cd9d5737883e2bb83959d87302e"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/adapter.test.ts",
+      "target": "packages/verification-adapter-stripe-identity/tests/adapter.test.ts",
+      "git_blob": "d0cd8afcecb461674180840f8c2336eddfca6170",
+      "mode": "100644",
+      "sha256": "4cad370e2304cd11c85a4a184674645a4b071b3007e4647477fce530ab334f51"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/conformance.test.ts",
+      "target": "packages/verification-adapter-stripe-identity/tests/conformance.test.ts",
+      "git_blob": "a7171d423e33870aece617e90183ae7ff0e14521",
+      "mode": "100644",
+      "sha256": "fcb287e0ae69f9d5801c9becc941ece958b26b8b47cdbeaad2d5a34bc34f5ebb"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/fixtures/cancel.json",
+      "target": "packages/verification-adapter-stripe-identity/tests/fixtures/cancel.json",
+      "git_blob": "2ca40a054590128dfd68ca2a19329218396be3f5",
+      "mode": "100644",
+      "sha256": "cff0be090cb1639a1d7b15dd7674353a64bdd5fe57fbe72496623c5e333dba1c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/fixtures/create.json",
+      "target": "packages/verification-adapter-stripe-identity/tests/fixtures/create.json",
+      "git_blob": "fd14f2607d28f50340980b9e8239172a8dbb65e7",
+      "mode": "100644",
+      "sha256": "42aad91419f2a838ccd3a9d55f8f08a3aa0c04c3f9143c6ca2d7205c88a54c81"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/fixtures/decline.json",
+      "target": "packages/verification-adapter-stripe-identity/tests/fixtures/decline.json",
+      "git_blob": "72b264fbc3510c14820e79b26ed7c51a01ce208c",
+      "mode": "100644",
+      "sha256": "bb175e374e50677f5cfe5ed4b8478e4dbd6b92a0eebb5d5f1ba3cee1ae460dd2"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/fixtures/redact.json",
+      "target": "packages/verification-adapter-stripe-identity/tests/fixtures/redact.json",
+      "git_blob": "4a982d73a317eafed398d3825abea39f1b34bc4a",
+      "mode": "100644",
+      "sha256": "a44eeb0eeb33ae9bbddaa3ea3cfd8795a59cb4cdd9755c69fbca4fe7c07d7fe6"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/fixtures/review.json",
+      "target": "packages/verification-adapter-stripe-identity/tests/fixtures/review.json",
+      "git_blob": "9b7352c4983128298e4b72f9dd201720cdde8fba",
+      "mode": "100644",
+      "sha256": "80d924ee5dd4a4c78db749ddbba9aad924fcf481f315219a68eb33d7cca67f8f"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/fixtures/success.json",
+      "target": "packages/verification-adapter-stripe-identity/tests/fixtures/success.json",
+      "git_blob": "ff6278706c17ad79aee373df6a3a7e9fd2ba430d",
+      "mode": "100644",
+      "sha256": "c7754189612356c72b855c369c4907b59a792b31746f58c9a397c6c393e207a0"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/fixtures/webhook-declined.json",
+      "target": "packages/verification-adapter-stripe-identity/tests/fixtures/webhook-declined.json",
+      "git_blob": "95cee85c14ae7107e768756a960be02de563da5e",
+      "mode": "100644",
+      "sha256": "52f629ccdc9a0755dc68de59e09f5ec28f01688270618bd1239c2c282ad19045"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/fixtures/webhook-verified.json",
+      "target": "packages/verification-adapter-stripe-identity/tests/fixtures/webhook-verified.json",
+      "git_blob": "ebf685183ea5b86e7f014a4fb3cdff38301cb5fa",
+      "mode": "100644",
+      "sha256": "0d202d2ed9a08c756cb9d88f897f7dcbc615ebd4c8d7600083f85b3ee5e77ef0"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/helpers.ts",
+      "target": "packages/verification-adapter-stripe-identity/tests/helpers.ts",
+      "git_blob": "72ae99ec83720c5c809f1f320af9f86a9b63a86f",
+      "mode": "100644",
+      "sha256": "dab95067a790839c5818c0692fbf6fd828fb7e9fdc5dfb6b9f73cedc199ba424"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/sandbox-contract.test.ts",
+      "target": "packages/verification-adapter-stripe-identity/tests/sandbox-contract.test.ts",
+      "git_blob": "c87eacd4d2e0e0f8e8014f382584082143664a20",
+      "mode": "100644",
+      "sha256": "e392f46a9029baa85a145ca7c79e0ce26f5172c4d2b1895b079822c419684aca"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tests/webhook.test.ts",
+      "target": "packages/verification-adapter-stripe-identity/tests/webhook.test.ts",
+      "git_blob": "2b0a65460eeeb802e8b4dcb117d625ae0b12f5dc",
+      "mode": "100644",
+      "sha256": "0ef6af6b2ce289cdb1ceb38ce6f887259e2e3ee0661d140318a812ae44873e69"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tsconfig.json",
+      "target": "packages/verification-adapter-stripe-identity/tsconfig.json",
+      "git_blob": "de1bf7b657cd0024c543c9d84da4a675d1292f81",
+      "mode": "100644",
+      "sha256": "2b4f097965322374286171361a07bb1bc8e70e19181c9e5e9789848e631835aa"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/tsup.config.ts",
+      "target": "packages/verification-adapter-stripe-identity/tsup.config.ts",
+      "git_blob": "c9e3f5dac3747629b388792275dd5558720e445b",
+      "mode": "100644",
+      "sha256": "a849ba664b215da51d29d94f8d85ab03cd04a9a0a6ea7e65de76f1953b1030f1"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-adapter-stripe-identity/vitest.config.ts",
+      "target": "packages/verification-adapter-stripe-identity/vitest.config.ts",
+      "git_blob": "c10923f2ed119fbcddf6672a6ab63ef52664f80b",
+      "mode": "100644",
+      "sha256": "5bcb1e59748d2e1585557127ea38aca33f5bef2b8fe2362276e51dca335b9111"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/LICENSE",
+      "target": "packages/verification-cli/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/NOTICE",
+      "target": "packages/verification-cli/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/README.md",
+      "target": "packages/verification-cli/README.md",
+      "git_blob": "08e3b34e8d0cf7cd07478013141b092debbfd878",
+      "mode": "100644",
+      "sha256": "c631b061b68667f0622cc51b40833674c39af08badf00c5925ddff063f762a7f"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/migrations/001_init.down.sql",
+      "target": "packages/verification-cli/migrations/001_init.down.sql",
+      "git_blob": "3fe688a81e709dba80a399faa66905902db4d756",
+      "mode": "100644",
+      "sha256": "4a44f745c66e556f2552f116ad0ad984efefe1be26ed9e7584f18454147f2911"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/migrations/001_init.sql",
+      "target": "packages/verification-cli/migrations/001_init.sql",
+      "git_blob": "1d6df463727989b85539ba1770215cf54b1ddde3",
+      "mode": "100644",
+      "sha256": "e8e4560389e0949563020de1ab83363166a09dc5d3f9c34b6ee87fd2e7a21024"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/migrations/002_seed.down.sql",
+      "target": "packages/verification-cli/migrations/002_seed.down.sql",
+      "git_blob": "d8d03fe7d1f91e07c74f4cc7b4e8983a5b24cdbd",
+      "mode": "100644",
+      "sha256": "c2a4f8317c681a5efcb9ba0da1f238cf12c3ea892139680a7564d0a382d412d2"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/migrations/002_seed.sql",
+      "target": "packages/verification-cli/migrations/002_seed.sql",
+      "git_blob": "aea8c8ab0f1f89676893cf083ad31335b355c6d8",
+      "mode": "100644",
+      "sha256": "92a5f1785bf3561c8a39c038ce225931f9fc229b712a6c938684bb64f0e4bff8"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/migrations/003_retention.down.sql",
+      "target": "packages/verification-cli/migrations/003_retention.down.sql",
+      "git_blob": "81c7c5377dc3579028829fc8c4006ebd9150704e",
+      "mode": "100644",
+      "sha256": "84aac1ba9dea73397a16074a8459c65fe5334eaa5de2c3c0e5a7d5ed017c4c99"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/migrations/003_retention.sql",
+      "target": "packages/verification-cli/migrations/003_retention.sql",
+      "git_blob": "5e72f141d69555783816505967c2df218dff82e3",
+      "mode": "100644",
+      "sha256": "48505f0053f37a7e3360abbb707599f966460a347c8fd1c4720e9d805b546823"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/package.json",
+      "target": "packages/verification-cli/package.json",
+      "git_blob": "26b2ca33b0dfb4b5ecc1a980b1cb2b087b5b5826",
+      "mode": "100644",
+      "sha256": "e5637351c99c51b5ed6740a1e1249842fb68006858edda4d2f807de3652368ae"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/src/argv.ts",
+      "target": "packages/verification-cli/src/argv.ts",
+      "git_blob": "54e1d77d40dd0f3bc9afb1f753d1e8df5adc3762",
+      "mode": "100644",
+      "sha256": "8c5c4ed175f21fbfce85ddadf1a60c2be0a5688518a7ce6896c2ac94e2261924"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/src/cli.ts",
+      "target": "packages/verification-cli/src/cli.ts",
+      "git_blob": "379d611839a84a0b7df52854f0749022541d16f2",
+      "mode": "100644",
+      "sha256": "f290ef4407ddab709c54f94ff1d1f89136e6a3347e1ae8ed38cdf5cd3d86ae28"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/src/commands.ts",
+      "target": "packages/verification-cli/src/commands.ts",
+      "git_blob": "ca11231e9f1a2ed9bd9167e1d5de48094b5d1c34",
+      "mode": "100644",
+      "sha256": "45669655b9d938f1e4c3116378e1f7d354ce0c7e2b7e55a3e64b3f65b110db95"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/src/config.ts",
+      "target": "packages/verification-cli/src/config.ts",
+      "git_blob": "e4e24b32158c6f617d2c7c95b0cc50eeb6970f6e",
+      "mode": "100644",
+      "sha256": "3c04e298589b6c4f4f17a09a8ee6bdbf1fc806a8be2f8520473463fbb421caf1"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/src/migrations.ts",
+      "target": "packages/verification-cli/src/migrations.ts",
+      "git_blob": "99f20475dfb673faa5ab50e048e0ce8d4aeaeb87",
+      "mode": "100644",
+      "sha256": "952339ada6cc614c4e5b93711cc662f89a1579ff1444758716a48a4befe9c03c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/src/redact.ts",
+      "target": "packages/verification-cli/src/redact.ts",
+      "git_blob": "8501712f18aa9d62a6247957d0df78cecc69ae5a",
+      "mode": "100644",
+      "sha256": "0e397f7667e7135de6384bbc26cde14165e2f872a837aa7f4681ac97bfd16064"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/src/scaffold.ts",
+      "target": "packages/verification-cli/src/scaffold.ts",
+      "git_blob": "3bb5c4f5923b463941159d1d38b2fa42f61bb54d",
+      "mode": "100644",
+      "sha256": "1ad79a82d5c5661bd87c77161fde05476a7b1fd23c048e15bdf3fae27ea07038"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/tests/cli.test.ts",
+      "target": "packages/verification-cli/tests/cli.test.ts",
+      "git_blob": "24691f7b819b3607e4b09fdc650c893ce59bbb8e",
+      "mode": "100644",
+      "sha256": "ae20f131fdd7b42d65a88db6822a020ec7178240a0cb433018f1f2c518afb726"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/tests/fixtures/conformance-adapter.mjs",
+      "target": "packages/verification-cli/tests/fixtures/conformance-adapter.mjs",
+      "git_blob": "49676bca22706d718a1b91ad9aad15204ac592d8",
+      "mode": "100644",
+      "sha256": "60e46342675452c05c6c6f144f7590e534ac75d47aa461584fdaf78ac94b4ebd"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/tsconfig.json",
+      "target": "packages/verification-cli/tsconfig.json",
+      "git_blob": "de1bf7b657cd0024c543c9d84da4a675d1292f81",
+      "mode": "100644",
+      "sha256": "2b4f097965322374286171361a07bb1bc8e70e19181c9e5e9789848e631835aa"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/tsup.config.ts",
+      "target": "packages/verification-cli/tsup.config.ts",
+      "git_blob": "b8beae93ff34c0367c11d304dc182755d7fba78c",
+      "mode": "100644",
+      "sha256": "5dbdf0d816d135be08ab04098f30c0796b80a55da6284c0e37efa3aefd40997c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-cli/vitest.config.ts",
+      "target": "packages/verification-cli/vitest.config.ts",
+      "git_blob": "6c6693878c7b85ade93389c1d180ffcda43da24d",
+      "mode": "100644",
+      "sha256": "e377158e83f055d7cf215237ffb9d361c078f05a0f8ef5ceb82b0bb4be0bfe04"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-compat-splitin-v2/LICENSE",
+      "target": "packages/verification-compat-splitin-v2/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-compat-splitin-v2/NOTICE",
+      "target": "packages/verification-compat-splitin-v2/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-compat-splitin-v2/README.md",
+      "target": "packages/verification-compat-splitin-v2/README.md",
+      "git_blob": "e3a59ef8da5e1b1117773c3c2058eaa0d8651471",
+      "mode": "100644",
+      "sha256": "58df3c651c2737daa34f1bb3692f5deeebb53b4c8da5ee062b7c03a004e189c0"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-compat-splitin-v2/package.json",
+      "target": "packages/verification-compat-splitin-v2/package.json",
+      "git_blob": "df95c78afaa936d83f300f47500f0f0fdf86f392",
+      "mode": "100644",
+      "sha256": "5f4a0baaaef12dce6e7e6d2d8f6f3fe498d3692d2994e3f1413baaad876a8157"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-compat-splitin-v2/src/index.ts",
+      "target": "packages/verification-compat-splitin-v2/src/index.ts",
+      "git_blob": "a08d388b1a552b8de54572ea7768fd4e3ca89204",
+      "mode": "100644",
+      "sha256": "bec426f1955d13d620d59339e55bee4251e0fca1c714b455b760a7acf7ec92bf"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-compat-splitin-v2/tests/fixtures.ts",
+      "target": "packages/verification-compat-splitin-v2/tests/fixtures.ts",
+      "git_blob": "fb2b469b1523d61405b985c188d4e34cb5b47687",
+      "mode": "100644",
+      "sha256": "6679f0b1cbca7e8ce4ba75175a188137c3a2538047f42708764e039e462982bb"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-compat-splitin-v2/tests/parity.test.ts",
+      "target": "packages/verification-compat-splitin-v2/tests/parity.test.ts",
+      "git_blob": "3a5a96b80ab493ea8d83c5e732ac264bd32926cc",
+      "mode": "100644",
+      "sha256": "3161237d453094d334b52f7817e91ad09425b9fb5a2e354b3506f0e5319274be"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-compat-splitin-v2/tsconfig.json",
+      "target": "packages/verification-compat-splitin-v2/tsconfig.json",
+      "git_blob": "de1bf7b657cd0024c543c9d84da4a675d1292f81",
+      "mode": "100644",
+      "sha256": "2b4f097965322374286171361a07bb1bc8e70e19181c9e5e9789848e631835aa"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-compat-splitin-v2/tsup.config.ts",
+      "target": "packages/verification-compat-splitin-v2/tsup.config.ts",
+      "git_blob": "1542a3203c33f29325eb4a2c837efa5104d4474e",
+      "mode": "100644",
+      "sha256": "9796c2f323a138dc851ca37b21748da4a7b58391ee80dbeea1095159bd61b551"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-compat-splitin-v2/vitest.config.ts",
+      "target": "packages/verification-compat-splitin-v2/vitest.config.ts",
+      "git_blob": "6c6693878c7b85ade93389c1d180ffcda43da24d",
+      "mode": "100644",
+      "sha256": "e377158e83f055d7cf215237ffb9d361c078f05a0f8ef5ceb82b0bb4be0bfe04"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/LICENSE",
+      "target": "packages/verification-engine/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/NOTICE",
+      "target": "packages/verification-engine/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/README.md",
+      "target": "packages/verification-engine/README.md",
+      "git_blob": "fb72bb872b07c1d5fc3965d099dcfa112180d7d7",
+      "mode": "100644",
+      "sha256": "1e29be3ae4f6c8003178098d67d80804397aa78cbf2187c26160ed4c703e91c5"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/package.json",
+      "target": "packages/verification-engine/package.json",
+      "git_blob": "44855ea6a0d31572459b75529c2e38133104fbc7",
+      "mode": "100644",
+      "sha256": "830e71cee7266b23499765c538137eae890ecf180ebad1521b071751a3392fbf"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/canonical.ts",
+      "target": "packages/verification-engine/src/canonical.ts",
+      "git_blob": "6f558bd0f6a8d4a4fe3f5ed7855a1ad602aa914d",
+      "mode": "100644",
+      "sha256": "83fc32da98547c9e55bcb217f866e426bfe30432ed1f941c44e6172c012a4ce6"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/errors.ts",
+      "target": "packages/verification-engine/src/errors.ts",
+      "git_blob": "383559539b457cfcaa27a524577cb8b3d3eb848c",
+      "mode": "100644",
+      "sha256": "67c365a837726e87fb8a2837b709f63dcfe06dff3c26bda5994872f00e81db36"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/guards.ts",
+      "target": "packages/verification-engine/src/guards.ts",
+      "git_blob": "b0a40b9683c6985f7bba706ca2e702f89bfbb93c",
+      "mode": "100644",
+      "sha256": "2c6cc609be1d7fb4d8814f5db026ccab8768186458b8aed8f6d3cc506eca2118"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/hash.ts",
+      "target": "packages/verification-engine/src/hash.ts",
+      "git_blob": "3f5053d9371e7b0f292b18ae869e88c196c8240c",
+      "mode": "100644",
+      "sha256": "c2058a2191e475503a6251134a53030ecceca133590c06e4e4ba7599580de76e"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/index.ts",
+      "target": "packages/verification-engine/src/index.ts",
+      "git_blob": "271b09cddf7e7167fb29f80b27b563178dc186db",
+      "mode": "100644",
+      "sha256": "b82908f1511ccbb5ef0baf4cd74c4afb0931df05f579b0903d174a273e2a6ff7"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/memory-queue.ts",
+      "target": "packages/verification-engine/src/memory-queue.ts",
+      "git_blob": "d86d988c70e7bc46cbc3e8a78f97d4d1900f0af4",
+      "mode": "100644",
+      "sha256": "4fb791eb1a176cdb3976b442892bc04e9135cc3cc6c914869ceb6445e928a92f"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/memory-store.ts",
+      "target": "packages/verification-engine/src/memory-store.ts",
+      "git_blob": "f055dc975e38975cceb0475dddcb2db5bc8fcbde",
+      "mode": "100644",
+      "sha256": "bb817acc5090bb6b78df684435702a51cfeee31b53ccd8bdbf4b79a3a080d6ba"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/platform.ts",
+      "target": "packages/verification-engine/src/platform.ts",
+      "git_blob": "09741b0a633e0201f5bf66c815bc08e07fd19b8e",
+      "mode": "100644",
+      "sha256": "c13e6a03cd8a8c511c4ec4e38e16fb879ac281d1a5bbbf3b80eb1adeff6e1e1c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/queue.ts",
+      "target": "packages/verification-engine/src/queue.ts",
+      "git_blob": "e28f5580edab04c4ddeffd457fb38721add9174e",
+      "mode": "100644",
+      "sha256": "41db6984081c3976803e2b50a887db75ddff007a9dbb60d6f6e8c7849f995506"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/rate-budget.ts",
+      "target": "packages/verification-engine/src/rate-budget.ts",
+      "git_blob": "980915cce1a2238281d2f8e30fad4680ba4ac442",
+      "mode": "100644",
+      "sha256": "29036ccd46c74db9af353e057a0f8dbe6bcb041b690a475482e5fac98c9853a3"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/registry.ts",
+      "target": "packages/verification-engine/src/registry.ts",
+      "git_blob": "1ddd3619974279152c267c5a1387331bfe18d687",
+      "mode": "100644",
+      "sha256": "eb3235924d1d22ae74b7f077f4a7395873f6199755c7bfb22c55568e3f45891a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/routing.ts",
+      "target": "packages/verification-engine/src/routing.ts",
+      "git_blob": "9fc71d1a523a8ccb9c26e1288509bbd951335e68",
+      "mode": "100644",
+      "sha256": "6e9b6c84ab652eafddc8a2effc904534d2754a1864b157deb56192713499628f"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/seed.ts",
+      "target": "packages/verification-engine/src/seed.ts",
+      "git_blob": "ee18d22f7217dacff71f8bf0b1378473ec5e6629",
+      "mode": "100644",
+      "sha256": "0c787b8923d5a4937e28627d0a6649af059584fabaf5b8ac9140b963d9d55e08"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/status.ts",
+      "target": "packages/verification-engine/src/status.ts",
+      "git_blob": "e29ba20ce9b72c59ebafa3abf7f21cae9dd79d0b",
+      "mode": "100644",
+      "sha256": "dc57b2ec7f571712ce2f1fb0c9961f63fbd8e93477af30f2513dce061b0cef29"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/store.ts",
+      "target": "packages/verification-engine/src/store.ts",
+      "git_blob": "db9b5967e33bd429611e414ce9bd2942ea5d51f6",
+      "mode": "100644",
+      "sha256": "54701d00e88b41524b40aeb928decaebcc2ba4137826c75e845cabb840a73621"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/src/types.ts",
+      "target": "packages/verification-engine/src/types.ts",
+      "git_blob": "20e745b2e31bd76052551160089f0a7c83f725e2",
+      "mode": "100644",
+      "sha256": "5ec4bc222412bc0b60bd235009a8f934a7e77a380b2c4e41f168c800143251da"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/tests/engine.test.ts",
+      "target": "packages/verification-engine/tests/engine.test.ts",
+      "git_blob": "baf6502ba671948b93a2f31f68ac6dd0ce819c00",
+      "mode": "100644",
+      "sha256": "dbb7d2a5f0ab30024ea3f7d9e89a70cd07879653f4502f8235a397e7f94838e8"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/tests/governance.test.ts",
+      "target": "packages/verification-engine/tests/governance.test.ts",
+      "git_blob": "005c2789b7e68d839be5fb245b59b685d7cc00ef",
+      "mode": "100644",
+      "sha256": "c4294e3e2ffeb05706123741107e0fb647653d266009a0882fcd5dfbe4def813"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/tests/helpers.ts",
+      "target": "packages/verification-engine/tests/helpers.ts",
+      "git_blob": "41b4e77cc3869caef37ffea0c159c908a944f2bf",
+      "mode": "100644",
+      "sha256": "a0acfe481a2bd07c2fe32f1a2e468de9eba93a36d7a7f87f5eda9075cc4b00c0"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/tests/rate-budget.test.ts",
+      "target": "packages/verification-engine/tests/rate-budget.test.ts",
+      "git_blob": "04b5aabf15e5fe7aff1c54660644f50ef9ee87fc",
+      "mode": "100644",
+      "sha256": "6f9eae2a8685d251559521e06a0de06319a9b4bc7b2ea5b30f17f1e5c5173d70"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/tests/registry.test.ts",
+      "target": "packages/verification-engine/tests/registry.test.ts",
+      "git_blob": "71e768b728a7d2403fe96cc812cacc1717a78cf2",
+      "mode": "100644",
+      "sha256": "a6e7a214b9e049967f8d4db0b5c892e3113dd35fd37344af634a7e925244cc0b"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/tsconfig.json",
+      "target": "packages/verification-engine/tsconfig.json",
+      "git_blob": "de1bf7b657cd0024c543c9d84da4a675d1292f81",
+      "mode": "100644",
+      "sha256": "2b4f097965322374286171361a07bb1bc8e70e19181c9e5e9789848e631835aa"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/tsup.config.ts",
+      "target": "packages/verification-engine/tsup.config.ts",
+      "git_blob": "3451ef14fd1d2bd0b83af81ed9a67e83feb1e159",
+      "mode": "100644",
+      "sha256": "f610427ca06f2eda6755cc47bd47cc72bf25d0203d807cbb4475595db8ca5b1e"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-engine/vitest.config.ts",
+      "target": "packages/verification-engine/vitest.config.ts",
+      "git_blob": "c10923f2ed119fbcddf6672a6ab63ef52664f80b",
+      "mode": "100644",
+      "sha256": "5bcb1e59748d2e1585557127ea38aca33f5bef2b8fe2362276e51dca335b9111"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/LICENSE",
+      "target": "packages/verification-postgres/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/NOTICE",
+      "target": "packages/verification-postgres/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/QUERY_PLANS.md",
+      "target": "packages/verification-postgres/QUERY_PLANS.md",
+      "git_blob": "4df8167c9512a1323328c449a3ab1d9f62ed1dcb",
+      "mode": "100644",
+      "sha256": "f3fa31faed217f07021efa2ff9a1794828396b2d9c1fef822f94ded95360ae4a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/README.md",
+      "target": "packages/verification-postgres/README.md",
+      "git_blob": "14369e96ca98b68dbf301913dd39eb4fa1cdbc3f",
+      "mode": "100644",
+      "sha256": "15af2c26e52339ca399ddd5395d42f7574d735f40360057c47f3d26c9ccbd6a9"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/migrations/001_init.down.sql",
+      "target": "packages/verification-postgres/migrations/001_init.down.sql",
+      "git_blob": "3fe688a81e709dba80a399faa66905902db4d756",
+      "mode": "100644",
+      "sha256": "4a44f745c66e556f2552f116ad0ad984efefe1be26ed9e7584f18454147f2911"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/migrations/001_init.sql",
+      "target": "packages/verification-postgres/migrations/001_init.sql",
+      "git_blob": "1d6df463727989b85539ba1770215cf54b1ddde3",
+      "mode": "100644",
+      "sha256": "e8e4560389e0949563020de1ab83363166a09dc5d3f9c34b6ee87fd2e7a21024"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/migrations/002_seed.down.sql",
+      "target": "packages/verification-postgres/migrations/002_seed.down.sql",
+      "git_blob": "d8d03fe7d1f91e07c74f4cc7b4e8983a5b24cdbd",
+      "mode": "100644",
+      "sha256": "c2a4f8317c681a5efcb9ba0da1f238cf12c3ea892139680a7564d0a382d412d2"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/migrations/002_seed.sql",
+      "target": "packages/verification-postgres/migrations/002_seed.sql",
+      "git_blob": "aea8c8ab0f1f89676893cf083ad31335b355c6d8",
+      "mode": "100644",
+      "sha256": "92a5f1785bf3561c8a39c038ce225931f9fc229b712a6c938684bb64f0e4bff8"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/migrations/003_retention.down.sql",
+      "target": "packages/verification-postgres/migrations/003_retention.down.sql",
+      "git_blob": "81c7c5377dc3579028829fc8c4006ebd9150704e",
+      "mode": "100644",
+      "sha256": "84aac1ba9dea73397a16074a8459c65fe5334eaa5de2c3c0e5a7d5ed017c4c99"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/migrations/003_retention.sql",
+      "target": "packages/verification-postgres/migrations/003_retention.sql",
+      "git_blob": "5e72f141d69555783816505967c2df218dff82e3",
+      "mode": "100644",
+      "sha256": "48505f0053f37a7e3360abbb707599f966460a347c8fd1c4720e9d805b546823"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/migrations/supabaseHardening.sql",
+      "target": "packages/verification-postgres/migrations/supabaseHardening.sql",
+      "git_blob": "57ab4ee3771cf5e507fc59f3b606a2c110713dd0",
+      "mode": "100644",
+      "sha256": "eaee1d23fae7221e8276bb5d0007ac1c598db224a38145dc6386bfa2249980c3"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/package.json",
+      "target": "packages/verification-postgres/package.json",
+      "git_blob": "826928399b1bac60ac9e886efad09ae75eb63b67",
+      "mode": "100644",
+      "sha256": "29e3e43ea624624380e15baa1d880150d527651d238fb7dbfe84ebdfb288d875"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/src/catalog.ts",
+      "target": "packages/verification-postgres/src/catalog.ts",
+      "git_blob": "eb9151b0a120df48c628e20e1457368ef4237252",
+      "mode": "100644",
+      "sha256": "e6c7fca6781f01cd0d1d9129236cd5dea36bc3379c8aee6b35ed84ca37aeb044"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/src/executor.ts",
+      "target": "packages/verification-postgres/src/executor.ts",
+      "git_blob": "554f179f7a23859158285946020305899863fae2",
+      "mode": "100644",
+      "sha256": "ff0f9c862fc576e4da01b25a9b11a9c5ca18ed102e01b09fd754b979c4e28f56"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/src/index.ts",
+      "target": "packages/verification-postgres/src/index.ts",
+      "git_blob": "228559030b7437d82afc439a85e16f1c4945d61e",
+      "mode": "100644",
+      "sha256": "7ba16a2c12b99aad9937485a447dc8ee9e0f727886ff4f28551afa389e807d46"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/src/queue.ts",
+      "target": "packages/verification-postgres/src/queue.ts",
+      "git_blob": "ab8a3c528e1142e6d4876a20f235a36a84143371",
+      "mode": "100644",
+      "sha256": "b593d31b3196ea6b64a6d87f7d3d0f4370538f6c79f1f088ea313bb50f3c89c3"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/src/store.ts",
+      "target": "packages/verification-postgres/src/store.ts",
+      "git_blob": "74948c2d92b26ab13d482969843dc4481cb444b9",
+      "mode": "100644",
+      "sha256": "2f5815f42d56a296ebd73ca6e2b1488d14cdf9cf8357bf400ec1221750551d3c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/tests/catalog.test.ts",
+      "target": "packages/verification-postgres/tests/catalog.test.ts",
+      "git_blob": "3f7b7b8aad8c210f0c488162011cfb93f5063022",
+      "mode": "100644",
+      "sha256": "a80446796a755352f5db47c7e56ce9fe5210c7ee22a04019c62481e9c76c9c10"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/tests/live.test.ts",
+      "target": "packages/verification-postgres/tests/live.test.ts",
+      "git_blob": "54543f7428b443d38c4c200bfb01935e05e6a359",
+      "mode": "100644",
+      "sha256": "1959b1c70edab753b7b287efd8f881ae8fa398a8a00864f8bc4eb743cc3faa56"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/tests/queue-postgres.test.ts",
+      "target": "packages/verification-postgres/tests/queue-postgres.test.ts",
+      "git_blob": "3d9230373efde56cf434f8633806121405b655a5",
+      "mode": "100644",
+      "sha256": "9763309afd6c735fc3598ddc8d75d181d6edad1a81ea90d38b5af5aaccff2475"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/tests/store.test.ts",
+      "target": "packages/verification-postgres/tests/store.test.ts",
+      "git_blob": "ac4d19492d4b803043386685dbe49801b7ca124e",
+      "mode": "100644",
+      "sha256": "bdbb9e702a749a5f240a90647d96354e4c4931d5482b9ad96c71299415a09b62"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/tsconfig.json",
+      "target": "packages/verification-postgres/tsconfig.json",
+      "git_blob": "de1bf7b657cd0024c543c9d84da4a675d1292f81",
+      "mode": "100644",
+      "sha256": "2b4f097965322374286171361a07bb1bc8e70e19181c9e5e9789848e631835aa"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/tsup.config.ts",
+      "target": "packages/verification-postgres/tsup.config.ts",
+      "git_blob": "35dce2c5d960fe8a8ddaf1a8b5ab1dc680d25f41",
+      "mode": "100644",
+      "sha256": "25020a1f8dd9d7070bfa910d37c228df51fa08038dda01b81ecca161642ada43"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-postgres/vitest.config.ts",
+      "target": "packages/verification-postgres/vitest.config.ts",
+      "git_blob": "957bb480682cba5a997c33b6bda7ce8a501ebc6f",
+      "mode": "100644",
+      "sha256": "28a187361b948ce9d3d496c0647a1b0e81773cf39550f8ce034831fb17be1277"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/LICENSE",
+      "target": "packages/verification-react/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/NOTICE",
+      "target": "packages/verification-react/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/README.md",
+      "target": "packages/verification-react/README.md",
+      "git_blob": "58929671eaa3cfaf999289974d6550a4d14cb28b",
+      "mode": "100644",
+      "sha256": "22fd74600144d861de8ec1713a6d0e54b2966bbd6a2faeefd21ee27b74befea5"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/package.json",
+      "target": "packages/verification-react/package.json",
+      "git_blob": "5e15de3c57c1c2229f981905cb53bc500362621a",
+      "mode": "100644",
+      "sha256": "551c612780f4b750fa33b5f2cbdcb9f55b31b4e6f11a839c77270e259f2b778d"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/ambient.d.ts",
+      "target": "packages/verification-react/src/ambient.d.ts",
+      "git_blob": "7f60ce2d7c202686e453cafef1d487f3a2e0f71d",
+      "mode": "100644",
+      "sha256": "1c8e6d291abfc5d4c8620d1da89f199c6116da45482089ac0b0ff3affc919ba9"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/appeal/AppealForm.tsx",
+      "target": "packages/verification-react/src/appeal/AppealForm.tsx",
+      "git_blob": "af70dadabbf336acb9ae6f2e681556ed6e1111c3",
+      "mode": "100644",
+      "sha256": "fbc792e05b25b33b890ba07152a566f613f1a436d3dd8c11a56da946d965575e"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/appeal/index.ts",
+      "target": "packages/verification-react/src/appeal/index.ts",
+      "git_blob": "ab1c0b06de995ea215d0d79d69fe0b2f4c286d74",
+      "mode": "100644",
+      "sha256": "8bd07086901b8f580d93e5a84ad0228be714d8d97dc11e652a973113df6bf97a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/copy.ts",
+      "target": "packages/verification-react/src/copy.ts",
+      "git_blob": "74ec2ac46f999c06cf8e3176a4ab05f6977fc3b5",
+      "mode": "100644",
+      "sha256": "a0798feb2a7024fea409837493b8e6653497a8ea9ab525baef217a22adef487c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/css.ts",
+      "target": "packages/verification-react/src/css.ts",
+      "git_blob": "04667b6b29f169995ceee33870bfb50a5a2fefaf",
+      "mode": "100644",
+      "sha256": "bf5ecb66e45c98d60598627dafcf646f9c006e5561fcc818edf55d7bbe700b7a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/hooks/runtime.ts",
+      "target": "packages/verification-react/src/hooks/runtime.ts",
+      "git_blob": "dfe9e3502029ccf5cbe72d74889d992c1830dc56",
+      "mode": "100644",
+      "sha256": "a674b72e3d0578654e3cea24a86496b21872a8fc0f3047682b45380646f12d4e"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/hooks/session.ts",
+      "target": "packages/verification-react/src/hooks/session.ts",
+      "git_blob": "5b958d4e2b51a47f43da6b6094b8cb892e0665a6",
+      "mode": "100644",
+      "sha256": "426f792684d2ef56349500d6d9b8e402fd732f6e0d2003d17b852238aedf5b7c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/hooks/status.ts",
+      "target": "packages/verification-react/src/hooks/status.ts",
+      "git_blob": "7e49b65ba0e61a2eb8102890537857806b0f6be7",
+      "mode": "100644",
+      "sha256": "5eaef76204c90266b325a17eccf17cc3248b2557e77cc86a039dd69c8dc17135"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/index.ts",
+      "target": "packages/verification-react/src/index.ts",
+      "git_blob": "451b555ec668e604aa8d84ea00fd4f8264228b90",
+      "mode": "100644",
+      "sha256": "b31ab3772695786f2a3eed0716f4f5af57300c75d635d3e826af5f0b16923bd0"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/launcher/VerificationLauncher.tsx",
+      "target": "packages/verification-react/src/launcher/VerificationLauncher.tsx",
+      "git_blob": "8dcc9d7b186e0db7b9d473a76d14f20144ff1abf",
+      "mode": "100644",
+      "sha256": "89840f65d51249473ecfb900931d792eb91b8f79ece2ee8851e70cfe05674ccc"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/launcher/index.ts",
+      "target": "packages/verification-react/src/launcher/index.ts",
+      "git_blob": "efa096d53a6227cd2fc8a4aa5b543ede733463ef",
+      "mode": "100644",
+      "sha256": "12d45090be608c8dbf5815a314183d2ec9de4ab9e80aaf7f59786b28cb8f95bd"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/operations/OperationsConsole.tsx",
+      "target": "packages/verification-react/src/operations/OperationsConsole.tsx",
+      "git_blob": "25052bed5dd1c7e97b2c32254d0f9249c4496de3",
+      "mode": "100644",
+      "sha256": "fa2eaf4c935ee11957b89e335839d03663d39d0c18e63c2ce6cd89b0984743ce"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/operations/index.ts",
+      "target": "packages/verification-react/src/operations/index.ts",
+      "git_blob": "6468785430101505e6601bc70f21f2255b1eb711",
+      "mode": "100644",
+      "sha256": "5648ec21dcd8ff808db932b42206f21e65dcfbb8e0edbc73c9f83f74b8f3ee49"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/plugins/persona.tsx",
+      "target": "packages/verification-react/src/plugins/persona.tsx",
+      "git_blob": "46b056821b9c940ceab76d009c2ba6b70245dfbf",
+      "mode": "100644",
+      "sha256": "900f75695fb6903c048f79ef1be6602afaa3b839894a99f575e3c6ed72f0830d"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/plugins/plaid.tsx",
+      "target": "packages/verification-react/src/plugins/plaid.tsx",
+      "git_blob": "4c069a00cd9ac266fa497e07198a048fcafc1573",
+      "mode": "100644",
+      "sha256": "1de8ce87fafdddea4f049abea09d1eb600cf3285d569f55f3ce2d87bb5ef8da8"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/plugins/stripe.tsx",
+      "target": "packages/verification-react/src/plugins/stripe.tsx",
+      "git_blob": "bbb5de14fdb64c857041a0169bc5fc720b77bcb3",
+      "mode": "100644",
+      "sha256": "7f2afa20dfa74a070b7f96a710334373970b954ca32bfddca782675750804c74"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/retry/RetryButton.tsx",
+      "target": "packages/verification-react/src/retry/RetryButton.tsx",
+      "git_blob": "ded8a86690e544f389a28bcfde736e5312814d74",
+      "mode": "100644",
+      "sha256": "3093c474665524d8d82392ef058a5a74e946463facd7bc88c8c4ffc161d291ea"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/retry/index.ts",
+      "target": "packages/verification-react/src/retry/index.ts",
+      "git_blob": "32320b35101307ecade3fd143a37329f1909f0e4",
+      "mode": "100644",
+      "sha256": "62db4c6204c835bc3fc0d1e7a6e5415c062090ec24222f69104c343ec1d0a6b5"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/status/VerificationStatus.tsx",
+      "target": "packages/verification-react/src/status/VerificationStatus.tsx",
+      "git_blob": "dc16bc79e368d97a98b15bdb436fe6877e3c957f",
+      "mode": "100644",
+      "sha256": "11734cea83044f6f60328b5fdfe751fbdf69e5ee4f43d60520c15894abc07965"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/status/index.ts",
+      "target": "packages/verification-react/src/status/index.ts",
+      "git_blob": "28f62004f5e359f98e21c2d063c82cd640c99e81",
+      "mode": "100644",
+      "sha256": "dfab8b3734d4e8da77ba6da7d840cc730c30dc75e9648c68fca9d6ad5a840e6c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/styles.css",
+      "target": "packages/verification-react/src/styles.css",
+      "git_blob": "dba9744a01e6e25458b4acec72487ff5dc20225b",
+      "mode": "100644",
+      "sha256": "d3b3313f2a3f39be81c2284eda6646b8b435fb85e7128ddf90295c6b8b8887ad"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/support/SupportLink.tsx",
+      "target": "packages/verification-react/src/support/SupportLink.tsx",
+      "git_blob": "a1a47a608a8c7c3c39a50adbdb9202d18611d251",
+      "mode": "100644",
+      "sha256": "9760339ae4e963ea5446aed0cb2146b2210a0f4332d61e65c32390fc58e5e42e"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/src/support/index.ts",
+      "target": "packages/verification-react/src/support/index.ts",
+      "git_blob": "80ee2065d0a15848e4e2b5cd3c1f98e44c630b1f",
+      "mode": "100644",
+      "sha256": "17b8ef60b8115e382443a23d4586da47a9d8ab0472bb2f1e0f5fba471fc2a49a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/tests/device-matrix.test.tsx",
+      "target": "packages/verification-react/tests/device-matrix.test.tsx",
+      "git_blob": "a4b3f251a75c3da519ed2e3c224fdf711b1b58a0",
+      "mode": "100644",
+      "sha256": "61c7b9f23249e003fdabaa29a15037fb9273eea623d06cd30fa5428fc721b8c8"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/tests/launcher.test.tsx",
+      "target": "packages/verification-react/tests/launcher.test.tsx",
+      "git_blob": "7cedafab727a9f9e6227a6b473a8ead27a347095",
+      "mode": "100644",
+      "sha256": "4ef53d14fe36fe594bf51e310295146dbe86b378b3d09b2e4b4d76567d23ef4d"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/tests/lazy-bundle.test.ts",
+      "target": "packages/verification-react/tests/lazy-bundle.test.ts",
+      "git_blob": "0efbf392d898e7641c3d10b264351347baef4493",
+      "mode": "100644",
+      "sha256": "616a414fffea4ef21e0e9f03b2a8ee770031deb085fad8f28f6ec82c82cb72cb"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/tests/operations.test.tsx",
+      "target": "packages/verification-react/tests/operations.test.tsx",
+      "git_blob": "46bda554d0ac8395d249fb056cb56e5060829cd0",
+      "mode": "100644",
+      "sha256": "6f502c42a251f21ae2b652d4600cda5960ea7139b639dc7e764b3d7045490910"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/tests/setup.ts",
+      "target": "packages/verification-react/tests/setup.ts",
+      "git_blob": "bb02c60cd055452852c33afe9078e35455935fb0",
+      "mode": "100644",
+      "sha256": "91a3c8962a0edcb956206a501d943fe99e1c78c6d4d8b5c9a948a3362c75978c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/tsconfig.json",
+      "target": "packages/verification-react/tsconfig.json",
+      "git_blob": "3433cfd4071ed359ded441e8a5fbeb5c181e7fc1",
+      "mode": "100644",
+      "sha256": "8b2895b214c894e638e99c534b428dcb0b4c1d4a47e70b6db1f220ab851ff32d"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/tsup.config.ts",
+      "target": "packages/verification-react/tsup.config.ts",
+      "git_blob": "5e4877bbdb07fc51451b0f1172de97e5a1b5e979",
+      "mode": "100644",
+      "sha256": "56115c5f70f97851e6b566e8ccc5bf06c9fec7bb750ada976afbd54533ac8d2a"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-react/vitest.config.ts",
+      "target": "packages/verification-react/vitest.config.ts",
+      "git_blob": "a112daa6fa049b86ca5f02bead99758df82c8f20",
+      "mode": "100644",
+      "sha256": "54139b3585315ca3bb9880a7ecfc00486a28abaaa4495bf02dc0c567dd836de4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/LICENSE",
+      "target": "packages/verification-server/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/NOTICE",
+      "target": "packages/verification-server/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/README.md",
+      "target": "packages/verification-server/README.md",
+      "git_blob": "63f2fa2ed06a4cbfad9e1f5b32a16de26d89699e",
+      "mode": "100644",
+      "sha256": "49be6cbcb7966b39a78ed09ca2455c65faa88ccf9b0832d6cdd5186750a7b042"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/openapi/openapi.v1.json",
+      "target": "packages/verification-server/openapi/openapi.v1.json",
+      "git_blob": "2ef597621ea20b40ed265aa25feae281d3e33ac3",
+      "mode": "100644",
+      "sha256": "bd4d74edae4420ed9060e9190b60bb9bd321b9ed93bddf4a14c9ebf3475e3cea"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/package.json",
+      "target": "packages/verification-server/package.json",
+      "git_blob": "fd3af73a7dc029ba10462b76a7a8c3ae121c7658",
+      "mode": "100644",
+      "sha256": "0b1e694871e33da46642925329b2fc82251b8a9724300369c108da07776638cc"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/auth.ts",
+      "target": "packages/verification-server/src/auth.ts",
+      "git_blob": "4ff59625078a6e3958fda6fa9d949e9b0c63fcc8",
+      "mode": "100644",
+      "sha256": "6adebf072dac03c123b3d738be26e530af1287cd0fd681755ba9350c58685eae"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/catalog.ts",
+      "target": "packages/verification-server/src/catalog.ts",
+      "git_blob": "962779b12758c485007e453c17c8f5781d657e74",
+      "mode": "100644",
+      "sha256": "9821f5375b0d6a9187db11b767e24302199386bbf83d0eea0a12aec3561c77ab"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/engine-adapter.ts",
+      "target": "packages/verification-server/src/engine-adapter.ts",
+      "git_blob": "c668654c4d748466734e3535e42b258917173f28",
+      "mode": "100644",
+      "sha256": "3a1fddc47344e9a51b54b19c173c046a2b70ac87ba1af43df69679ed69cdb8f7"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/errors.ts",
+      "target": "packages/verification-server/src/errors.ts",
+      "git_blob": "677ef4a69170f021ae59ed2d1e7707499ed4ac69",
+      "mode": "100644",
+      "sha256": "3fddaf4a383a8c6e89a329623fe1e40c626b24369c2f7d1c876a7ea3152cac1e"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/express.ts",
+      "target": "packages/verification-server/src/express.ts",
+      "git_blob": "007d1fba9deeeb1bd142b81ec40d41983ce3cac3",
+      "mode": "100644",
+      "sha256": "456c50a50ae7adf7841ad4e6e8a7be8dcd1324c3fb834b94261f700cdc4790d1"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/handler.ts",
+      "target": "packages/verification-server/src/handler.ts",
+      "git_blob": "650a6393c28256a3f9cd522c5ca89f7797e7be20",
+      "mode": "100644",
+      "sha256": "7940e6fae86c8283d31ba612f4aa8c59b0d05516b5aa6db71fbfe8f102b0e4bb"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/hono.ts",
+      "target": "packages/verification-server/src/hono.ts",
+      "git_blob": "68d5453c5da8f6e666ecf3e44be6f3f6f30be6af",
+      "mode": "100644",
+      "sha256": "46d33424a1f55c218107954895b0c0e4e0f706b3227106875e00add5d5dab13f"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/index.ts",
+      "target": "packages/verification-server/src/index.ts",
+      "git_blob": "d4515a3f8988ca1c943a86df0d7ed3bd9b23e975",
+      "mode": "100644",
+      "sha256": "d78d4e15191f68b84e6c9ceea1741de127cc3e50b70948c78f7e087b9324eb91"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/json.ts",
+      "target": "packages/verification-server/src/json.ts",
+      "git_blob": "d5f52725c07d4ecd26441fc73680a115986d9a45",
+      "mode": "100644",
+      "sha256": "9f18e4f7ba0019babe6195e4687e512a21ef16c94e7ff29331965b61b9d996d3"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/openapi.ts",
+      "target": "packages/verification-server/src/openapi.ts",
+      "git_blob": "6588ae78e0ca6b54fd3a0020946b89a182e9d443",
+      "mode": "100644",
+      "sha256": "2755e760302cded11e056d34263e5e11e0755a9648df2824ec4339395d035710"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/supabase.ts",
+      "target": "packages/verification-server/src/supabase.ts",
+      "git_blob": "2467472ed2e80479490ef5a3522ea462fcdd156c",
+      "mode": "100644",
+      "sha256": "db48d9c09d1dfc2843d48a569fd37d8e2b3ad3038068ec48457b435f2c088fa1"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/src/types.ts",
+      "target": "packages/verification-server/src/types.ts",
+      "git_blob": "6e3bad2f2275eb7ce48f90d2313100ce4d3b7726",
+      "mode": "100644",
+      "sha256": "f1babdba70d51585b4f60994d12b27c15854d581f441ff83e555dd89f15e8a53"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/tests/adapters.test.ts",
+      "target": "packages/verification-server/tests/adapters.test.ts",
+      "git_blob": "885040124b58e633447a26118d2659578f497cf5",
+      "mode": "100644",
+      "sha256": "4783adb19610bf01c41b1ee4e48b7ab85a39e07689f46523bfc5fa91bcbb6023"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/tests/contract.ts",
+      "target": "packages/verification-server/tests/contract.ts",
+      "git_blob": "06c99cd0b0e88d94f611c8b02cce2ecf1fde661b",
+      "mode": "100644",
+      "sha256": "93aea3737f727e91a994df1451408cf34211b589e3695be6583914de0d96128c"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/tests/fake-platform.ts",
+      "target": "packages/verification-server/tests/fake-platform.ts",
+      "git_blob": "7f1293017086dfeb0c08988d8fb32acbb9a198b4",
+      "mode": "100644",
+      "sha256": "9a1cdcbd2f6ed91e24de10aa1d9118d768436b5b6f336ea4521ba44edd960f54"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/tests/handler.test.ts",
+      "target": "packages/verification-server/tests/handler.test.ts",
+      "git_blob": "2fb38afd66adb2b558c024bb6b7e66a2228dcf01",
+      "mode": "100644",
+      "sha256": "d08046ac7df0af007860ca27d41725f242ceeab04e8a7d02a564248ae1e3e43b"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/tsconfig.json",
+      "target": "packages/verification-server/tsconfig.json",
+      "git_blob": "de1bf7b657cd0024c543c9d84da4a675d1292f81",
+      "mode": "100644",
+      "sha256": "2b4f097965322374286171361a07bb1bc8e70e19181c9e5e9789848e631835aa"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/tsup.config.ts",
+      "target": "packages/verification-server/tsup.config.ts",
+      "git_blob": "bdc9c7e2b66bf697121d2d3c36460433c37f0cee",
+      "mode": "100644",
+      "sha256": "b386872af966542ff2e016b22b12b459957b634531f39140912ff879f08aed99"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-server/vitest.config.ts",
+      "target": "packages/verification-server/vitest.config.ts",
+      "git_blob": "6c6693878c7b85ade93389c1d180ffcda43da24d",
+      "mode": "100644",
+      "sha256": "e377158e83f055d7cf215237ffb9d361c078f05a0f8ef5ceb82b0bb4be0bfe04"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/LICENSE",
+      "target": "packages/verification-web/LICENSE",
+      "git_blob": "f701f8c6f7fad564de7525eda23b583dfb75c6fc",
+      "mode": "100644",
+      "sha256": "b1986d2e6ac1155cdd8304192a65216c07569aaa42663724cfafd9eb67b334e4"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/NOTICE",
+      "target": "packages/verification-web/NOTICE",
+      "git_blob": "1de4beefc14e849b6385bd725815d81036957415",
+      "mode": "100644",
+      "sha256": "4be641ba7ea473f3547ee29092c491897d6d97639d04f267eb3382eb218edc35"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/README.md",
+      "target": "packages/verification-web/README.md",
+      "git_blob": "bb4c747d214029c3fa35c8378e13a526394d4203",
+      "mode": "100644",
+      "sha256": "eda70e021fbc8533383779225eb12c9b85589896ac8bc9821f8d7f10d1eee119"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/package.json",
+      "target": "packages/verification-web/package.json",
+      "git_blob": "fd581775d5a08b20c43ceeedbdd65c003c86fc76",
+      "mode": "100644",
+      "sha256": "4c2ecd057b38a7b034a0e660530ff2c047f17ff31437037fc5dc1270af609851"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/src/controller.ts",
+      "target": "packages/verification-web/src/controller.ts",
+      "git_blob": "0059dfafa8364b996c3a8d38ed150effb3427818",
+      "mode": "100644",
+      "sha256": "368861519cc03c262bdbd32d2b7fad34a3b6fed6476516160aa057327b6a0bea"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/src/demo.ts",
+      "target": "packages/verification-web/src/demo.ts",
+      "git_blob": "1320d24e61545f05c9e92878e65d7393c3247218",
+      "mode": "100644",
+      "sha256": "d4fca10c0a97c890fe75574a9e71bb9081a4c11cf6156790ad75a1061a4104be"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/src/environment.ts",
+      "target": "packages/verification-web/src/environment.ts",
+      "git_blob": "d6fe9c082365dcd86107b1f95667337318e0a4fd",
+      "mode": "100644",
+      "sha256": "60d7125fbacf1d405f4ae7b37574eff1dd1ab5e30f6a1332e0c1a80b6593af52"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/src/index.ts",
+      "target": "packages/verification-web/src/index.ts",
+      "git_blob": "2ebcee892da05c71597a1b4414685b039960c081",
+      "mode": "100644",
+      "sha256": "3e4c8e7cdd039c826727a60ccaf6d433c0bd6a56273564f29be96901d770a365"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/src/plugins.ts",
+      "target": "packages/verification-web/src/plugins.ts",
+      "git_blob": "a8d86048d903d6bcadd8907df8e509eb8c3b564f",
+      "mode": "100644",
+      "sha256": "01cd46947028af41adfe36659195b9b358eaec84eade3af889c78053424d553b"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/src/secrets.ts",
+      "target": "packages/verification-web/src/secrets.ts",
+      "git_blob": "be190d337fb0ccecb586cd3f4873f4b69d5f912f",
+      "mode": "100644",
+      "sha256": "face1d117778fb38550dc1bb1b60eae15c54baccf303324b6443424e91e64a79"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/src/types.ts",
+      "target": "packages/verification-web/src/types.ts",
+      "git_blob": "60e30d894363cc49cc7e40d8e388b3cdea123949",
+      "mode": "100644",
+      "sha256": "02b80f74f1c875bbc395ca4b5daa50bba52f4fe5c0da8617a379c9b869005c50"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/tests/controller.test.ts",
+      "target": "packages/verification-web/tests/controller.test.ts",
+      "git_blob": "a59c10fe39d0f3a35e0becc17b646617c9566a76",
+      "mode": "100644",
+      "sha256": "9ad9d649ccc4220094cd15fa3a785903c2508a76e813068bf1e62fb18e9ecf10"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/tests/environment.test.ts",
+      "target": "packages/verification-web/tests/environment.test.ts",
+      "git_blob": "2464bd971cb6af211a9eec7086ce362c403b4e34",
+      "mode": "100644",
+      "sha256": "0208fb59e9077fdfd53bee0962a7fea2617dd7baaea8934db96381129e15fa28"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/tsconfig.json",
+      "target": "packages/verification-web/tsconfig.json",
+      "git_blob": "49ce3a8b5e691e4ac1bb8c82a03a95b5cb47f383",
+      "mode": "100644",
+      "sha256": "ca2bc2b169e2d5f63618d11297c3f9d3e228c8b9e4e2684e6726787e4dc435a5"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/tsup.config.ts",
+      "target": "packages/verification-web/tsup.config.ts",
+      "git_blob": "3451ef14fd1d2bd0b83af81ed9a67e83feb1e159",
+      "mode": "100644",
+      "sha256": "f610427ca06f2eda6755cc47bd47cc72bf25d0203d807cbb4475595db8ca5b1e"
+    },
+    {
+      "source": "verification-adapter-sdk/packages/verification-web/vitest.config.ts",
+      "target": "packages/verification-web/vitest.config.ts",
+      "git_blob": "f6299f41f1530686878aa1b118d4ca9e08f890d7",
+      "mode": "100644",
+      "sha256": "6765d6aea0cf4b66df4e50998c574829cadee4f9b053c9d706d0ef8e244a8ff3"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/api-extractor.mjs",
+      "target": "scripts/api-extractor.mjs",
+      "git_blob": "d41daa6284f135cd860cf1b796692f957cabd3c1",
+      "mode": "100644",
+      "sha256": "2e3d426b3f3bf91c9a37685e063f8f91d886a4b132728b2c98f5dfbd53bdfda5"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/build-packages.mjs",
+      "target": "scripts/build-packages.mjs",
+      "git_blob": "a767c243ed0889edf03ee8c5496b79d81115afb0",
+      "mode": "100644",
+      "sha256": "8f5814e80b607ee8dd308b171ede29988cddf19a44a91271477c68f32f8d912c"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/check-coverage.mjs",
+      "target": "scripts/check-coverage.mjs",
+      "git_blob": "53b6399a8124cd8995089572bb1fbae288d66d0f",
+      "mode": "100644",
+      "sha256": "abfd115c34461e2dd50da3248c80f2f06985e9221ec9544cb571658d0d46befc"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/check-declaration-maps.mjs",
+      "target": "scripts/check-declaration-maps.mjs",
+      "git_blob": "d628944963ef5ce7ed316e30b3627d99dc965173",
+      "mode": "100644",
+      "sha256": "b0b4730a7a6a095e194a766692953813ad2a48fc6492f12c1742ea441d87cb2d"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/check-licenses.mjs",
+      "target": "scripts/check-licenses.mjs",
+      "git_blob": "483145699668dde83b4a9f8bee3817261b861f24",
+      "mode": "100644",
+      "sha256": "eeea42e8187b928fd3d830f415ab52449b1d128639d1c13bf49754b204835b50"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/check-openapi.mjs",
+      "target": "scripts/check-openapi.mjs",
+      "git_blob": "887f87df9df0fc7a362379005cab0fa1391f5d48",
+      "mode": "100644",
+      "sha256": "3ef0db0cef21385ea19941d2b8086aa24b7271d0c4ecada4191ece142d65be41"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/check-package-boundaries.mjs",
+      "target": "scripts/check-package-boundaries.mjs",
+      "git_blob": "4268b6c1d8a07c542297e03399bf84b498dd42a8",
+      "mode": "100644",
+      "sha256": "b15a0f8f1d175893ee79aff01325a68d3f4c7c4169d550ebe6859bea879f274c"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/check-package-size.mjs",
+      "target": "scripts/check-package-size.mjs",
+      "git_blob": "b188e50196684587944650d161dd10eb72d096b1",
+      "mode": "100644",
+      "sha256": "277faddf5a4ac3df8b6eb6f3062e1b638b038ffe3a2d96aacdc4666f3f194edd"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/emit-declaration-maps.mjs",
+      "target": "scripts/emit-declaration-maps.mjs",
+      "git_blob": "8c0cd72ad26256a116b311ea67ce225630e1431e",
+      "mode": "100644",
+      "sha256": "60a7a398c09e75a3060ed0dab415728215eb4037e9c24b4a7ad015d626ab12cf"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/generate-openapi.mjs",
+      "target": "scripts/generate-openapi.mjs",
+      "git_blob": "c6c5377b2d41674be0d8812dc16b34cee96c9f34",
+      "mode": "100644",
+      "sha256": "f5e7082a9339bd3e41fa49280110643c7e2027439a75938b120160c8c7704849"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/generate-sbom.mjs",
+      "target": "scripts/generate-sbom.mjs",
+      "git_blob": "89cdfc8d8aa80fc7a0a44b23256d5f672bb311b7",
+      "mode": "100644",
+      "sha256": "43c80438aea12be31226f6944429d2bfc790cd774f707cdf406b2461cecfdc43"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/pack-inspect.mjs",
+      "target": "scripts/pack-inspect.mjs",
+      "git_blob": "9ecc2470bbf019668cf9407238509e54d31561ea",
+      "mode": "100644",
+      "sha256": "7bf81ef169f8517abf17b8a1a40045804cfb5e1b19843b1ba959212ded820b7c"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/perf-bench.mjs",
+      "target": "scripts/perf-bench.mjs",
+      "git_blob": "be4ca10b60e14bba269b676611d5262f4c86abc0",
+      "mode": "100644",
+      "sha256": "ed8966aebb7d1ebb0765723cd0324c62abad322bf1df1032445fb8a278bb0106"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/perf-soak.mjs",
+      "target": "scripts/perf-soak.mjs",
+      "git_blob": "9139c2ab3fd1014706e2f9db657009c48aee040d",
+      "mode": "100644",
+      "sha256": "8457193da3a1f66d6b23384c425f49d5090a4db48d6cb03aa4ab0ae95b6d1aa7"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/release-verify.mjs",
+      "target": "scripts/release-verify.mjs",
+      "git_blob": "ec1cb23e1802c6e8bcde74d4b86eab987f53f087",
+      "mode": "100644",
+      "sha256": "34c977e47e2c992d21cb96b43c49fb8f33af5f08466cf381fa285cfc996577c3"
+    },
+    {
+      "source": "verification-adapter-sdk/scripts/scan-secrets.mjs",
+      "target": "scripts/scan-secrets.mjs",
+      "git_blob": "30de77a1164d6f3fbe49d3d9f7c295f381b0daa7",
+      "mode": "100644",
+      "sha256": "0603396899a49cfe1630a1215178e78511a34a4a3905b4785a05b5c5c0107859"
+    },
+    {
+      "source": "verification-adapter-sdk/tooling/api-extractor.json",
+      "target": "tooling/api-extractor.json",
+      "git_blob": "48d891dd63fe85353cbfc1568967539d5f616f48",
+      "mode": "100644",
+      "sha256": "a332d867a10257a60118ebc85cbd9ad084b41a63c736800bb15f52f137381a2e"
+    },
+    {
+      "source": "verification-adapter-sdk/tooling/tsup.ts",
+      "target": "tooling/tsup.ts",
+      "git_blob": "f8a89369eeb18ae745b400794da4f9407e7f3052",
+      "mode": "100644",
+      "sha256": "e40fd5b923df2bdff08c012ddfbd64da3d054607658358b893737f4aeb78141f"
+    },
+    {
+      "source": "verification-adapter-sdk/tooling/vitest-coverage.ts",
+      "target": "tooling/vitest-coverage.ts",
+      "git_blob": "e3996515397340a391f144023026c6429fb8db84",
+      "mode": "100644",
+      "sha256": "11b490e4e692b2a4ce8d9e2126090f33afdba6d601bcd760115d162763683c65"
+    },
+    {
+      "source": "verification-adapter-sdk/tsconfig.base.json",
+      "target": "tsconfig.base.json",
+      "git_blob": "e6a47e62dc0e0f65d453266265fb5f9fa2e6b384",
+      "mode": "100644",
+      "sha256": "3a978337fd58765f478db024350c48e48dae66796e8629362863468b8835b314"
+    }
+  ]
+}

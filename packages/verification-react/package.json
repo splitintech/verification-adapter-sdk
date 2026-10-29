@@ -4,11 +4,11 @@
   "description": "Accessible React hooks and components for verification launch, status, appeals, and operations.",
   "license": "MIT",
   "author": "SplitInTech, @ojchavan",
-  "homepage": "https://github.com/splitintech/open-internal-tools/tree/main/verification-adapter-sdk/packages/verification-react#readme",
+  "homepage": "https://github.com/splitintech/verification-adapter-sdk/tree/main/packages/verification-react#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/splitintech/open-internal-tools.git",
-    "directory": "verification-adapter-sdk/packages/verification-react"
+    "url": "git+https://github.com/splitintech/verification-adapter-sdk.git",
+    "directory": "packages/verification-react"
   },
   "type": "module",
   "sideEffects": [
@@ -108,5 +108,8 @@
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",
     "vitest": "^3.2.4"
+  },
+  "bugs": {
+    "url": "https://github.com/splitintech/verification-adapter-sdk/issues"
   }
 }

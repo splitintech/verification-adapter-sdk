@@ -11,10 +11,11 @@ permissions:
 
 defaults:
   run:
-    working-directory: verification-adapter-sdk
+    working-directory: .
 
 jobs:
   publish:
+    if: vars.NPM_TRUSTED_PUBLISHING_ENABLED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
@@ -26,7 +27,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: verification-adapter-sdk/package-lock.json
+          cache-dependency-path: package-lock.json
       - name: Install npm for OIDC trusted publishing
         run: npm install -g npm@11.5.1
         working-directory: .
@@ -45,11 +46,11 @@ jobs:
           node scripts/assert-release-tag.mjs \
             --tag "${{ github.ref_name }}" \
             --prefix verification-adapter-sdk-v \
-            --workspace-root verification-adapter-sdk
+            --workspace-root .
       - name: Publish packages with OIDC provenance
         working-directory: .
         run: |
-          node scripts/oidc-npm-publish.mjs --cwd verification-adapter-sdk \
+          node scripts/oidc-npm-publish.mjs --cwd . \
             --workspace @splitin/verification-adapter-sdk \
             --workspace @splitin/verification-engine \
             --workspace @splitin/verification-postgres \

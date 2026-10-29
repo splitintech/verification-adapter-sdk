@@ -12,7 +12,8 @@ if (!npmrc.includes('provenance=true')) {
   failures.push('.npmrc must enable provenance=true for trusted publishing.');
 }
 
-const workflowsDir = join(root, '..', '.github', 'workflows');
+const workflowsDir = join(root, '.github', 'workflows');
+if (!existsSync(workflowsDir)) failures.push("Standalone release workflows are missing.");
 if (existsSync(workflowsDir)) {
   for (const name of readdirSync(workflowsDir).filter((file) => file.startsWith('verification-adapter-sdk'))) {
     const source = readFileSync(join(workflowsDir, name), 'utf8');

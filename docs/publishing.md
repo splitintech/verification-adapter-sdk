@@ -1,66 +1,14 @@
 # Publishing
 
-Packages publish to npm with **trusted publishing** (GitHub OIDC) and
-provenance. Do **not** embed an npm token in Actions or in this repository.
+See [repository release setup](repository-release.md) before enabling publishing. Configure npm trusted publishing for repository `splitintech/verification-adapter-sdk` and workflow `verification-adapter-sdk-publish.yml` for each public workspace package. Preserve package names and publish a new version only when intended. No npm token is required.
 
-## Versions
-
-1. Publish **`0.1.0-beta.0`** for the public V1 contract.
-2. Publish **`1.0.0`** only after sandbox certification of the adapter
-   conformance kit and first-market (US) sandbox fixtures.
-
-Contract version (`1.0.0`) is independent of npm version.
-
-## Tag and release
-
-From the hub root, with a clean tree and GPG or SSH signing configured:
+From the standalone repository root, after tests, build and packed-consumer checks pass, create a signed tag matching the package version:
 
 ```bash
-scripts/create-release-tag.sh verification-adapter-sdk
-git push origin verification-adapter-sdk-v0.1.0-beta.0
+version=$(node -p "require('./package.json').version")
+node scripts/assert-release-tag.mjs --tag "verification-adapter-sdk-v$version" --prefix verification-adapter-sdk-v --workspace-root .
+git tag -s "verification-adapter-sdk-v$version" -m "verification-adapter-sdk $version"
+git push origin "verification-adapter-sdk-v$version"
 ```
 
-The tag must be `verification-adapter-sdk-v<semver>` and match every
-workspace package version. Pushing it runs
-`.github/workflows/verification-adapter-sdk-publish.yml`, which creates a
-GitHub Release and publishes any **new** versions with `--provenance`.
-Versions already on the registry are skipped.
-
-## Workflow
-
-- `workflow_dispatch` or tags `verification-adapter-sdk-v*`
-- Job permissions: `id-token: write`, `contents: write`
-- `npm install -g npm@11.5.1` (OIDC needs npm ≥ 11.5.1)
-- No `registry-url` on `actions/setup-node` and no `NODE_AUTH_TOKEN`
-- Publish order matches `scripts/build-packages.mjs`
-
-## Trusted publisher (npmjs.com)
-
-On **each** `@splitin/verification-*` package: Settings → Trusted Publisher
-→ GitHub Actions:
-
-- Organization: `splitintech`
-- Repository: `open-internal-tools`
-- Workflow filename: `verification-adapter-sdk-publish.yml`
-- Allowed action: `npm publish`
-
-Until that is attached, OIDC publish of a **new** version fails. The first
-`0.1.0-beta.0` tarballs were a local token bootstrap and have no provenance;
-the next version published from this workflow will.
-
-## Preflight
-
-```bash
-npm run boundaries
-npm run pack:inspect
-npm run release:verify
-npm run sbom
-```
-
-Pack inspect allows `dist/**`, `LICENSE`, `README.md`, and `package.json` only.
-`.import/` must never ship.
-
-## Changesets
-
-This workspace uses Changesets. Version packages together (see
-`.changeset/config.json`). Copy `LICENSE` into every published package.
+Do this only with a clean working tree and configured Git signing. The workflow requires `NPM_TRUSTED_PUBLISHING_ENABLED=true`, publishes with provenance, and skips versions already in the registry. Existing hub release tags remain historical references.

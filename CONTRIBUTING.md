@@ -1,34 +1,7 @@
-# Contributing
+# Contributing to verification-adapter-sdk
 
-This folder is the tech for the Universal Open-Source Verification Adapter SDK.
-PRs stay inside `verification-adapter-sdk/` plus the GitHub workflows that
-build it. Do not edit other Open Internal Tools product folders in the same
-change.
+Develop this product in this standalone repository. See [README](README.md) for setup, APIs and tests, and [migration](docs/migration.md) for provenance. Keep public package names and APIs compatible. Include tests for behavior changes and run the existing checks before opening a pull request. Never commit credentials, live user data or local configuration.
 
-## Setup
+The [Open Internal Tools catalog](https://github.com/splitintech/open-internal-tools) links the independent projects. Product issues and changes belong [here](https://github.com/splitintech/verification-adapter-sdk/issues).
 
-```bash
-cd verification-adapter-sdk
-npm install
-npm test
-npm run boundaries
-```
-
-Node 20+. ESM. MIT.
-
-## Rules
-
-- Public contract lives in `@splitin/verification-adapter-sdk`. Import that
-  package, not `.import/`.
-- Core must not import React, `pg`, Express, Hono, Stripe, Persona, or Plaid.
-- Generated configuration is sandbox-only. Production routes stay disabled.
-- Never commit secrets. The CLI must redact `sk_`, `rk_`, `whsec_`, and tokens.
-- Copy `LICENSE` into every published package.
-- These primitives are not a compliance certification.
-
-## Release
-
-See [docs/publishing.md](docs/publishing.md). Use npm trusted publishing
-(OIDC). Do not embed an npm token.
-
-Hub contributing guide: [../../CONTRIBUTING.md](../../CONTRIBUTING.md).
+Run `python3 scripts/check-migration.py` to verify provenance inventory and retained assets. Use `--snapshot` only against the original migration snapshot; subsequent intentional source changes should not rewrite that historical snapshot.

@@ -37,8 +37,8 @@ Core and server packages have no React or vendor-browser dependency. The core pa
 ## Quickstart
 
 ```bash
-git clone https://github.com/splitintech/open-internal-tools.git
-cd open-internal-tools/verification-adapter-sdk
+git clone https://github.com/splitintech/verification-adapter-sdk.git
+cd verification-adapter-sdk
 npm install
 npm test
 npx splitin-verification init --cwd /tmp/verification-sandbox
@@ -90,3 +90,8 @@ Product page: [splitin.net/tech-stack/open-internal-tools/verification-adapter-s
 Hosted route: `https://www.splitin.net/dev-tools/verification` (deployment qualification tracked by the host application). Build with Node 24, `npm ci`, `npm run build`, then `npm test`. Consumers install reviewed versioned tarballs; no sibling-source imports are required.
 
 The hosted playground is isolated from customer verification, onboarding and payment eligibility. Public demonstrations keep state in memory and suppress recording. Provider credentials and launch secrets must never be persisted by a browser client. Test keyboard controls, 320/390/768px layouts and reduced motion as well as physical iOS Safari and Android Chrome.
+
+
+## Standalone repository
+
+This product is maintained at [verification-adapter-sdk](https://github.com/splitintech/verification-adapter-sdk). Clone this repository and run the documented setup from its root. The npm/package and API identities are preserved. See [migration provenance](docs/migration.md) and [contributing](CONTRIBUTING.md). See [release setup](docs/repository-release.md); publishing starts disabled pending external configuration.

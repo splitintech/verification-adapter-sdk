@@ -12,5 +12,14 @@
   },
   "dependencies": {
     "@splitin/verification-adapter-sdk": "0.1.0-beta.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splitintech/verification-adapter-sdk.git",
+    "directory": "examples/hono-worker"
+  },
+  "bugs": {
+    "url": "https://github.com/splitintech/verification-adapter-sdk/issues"
+  },
+  "homepage": "https://github.com/splitintech/verification-adapter-sdk/tree/main/examples/hono-worker#readme"
 }
